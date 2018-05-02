@@ -1,0 +1,1161 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		26806F62209978070089292C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26806F61209978070089292C /* AppDelegate.swift */; };
+		26806F64209978070089292C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26806F63209978070089292C /* ViewController.swift */; };
+		26806F67209978070089292C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 26806F65209978070089292C /* Main.storyboard */; };
+		26806F69209978070089292C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 26806F68209978070089292C /* Assets.xcassets */; };
+		26806F6C209978070089292C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 26806F6A209978070089292C /* LaunchScreen.storyboard */; };
+		26806F77209978080089292C /* iOSAppKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26806F76209978080089292C /* iOSAppKitTests.swift */; };
+		26806F8F2099994C0089292C /* NGAppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26806F862099994B0089292C /* NGAppKit.framework */; };
+		26806F962099994C0089292C /* NGAppKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26806F952099994C0089292C /* NGAppKitTests.swift */; };
+		26806F982099994C0089292C /* NGAppKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 26806F882099994C0089292C /* NGAppKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		26806F9B2099994C0089292C /* NGAppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26806F862099994B0089292C /* NGAppKit.framework */; };
+		26806F9C2099994C0089292C /* NGAppKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 26806F862099994B0089292C /* NGAppKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		26806FEE20999A250089292C /* RNCryptor+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 26806FA520999A230089292C /* RNCryptor+Private.h */; };
+		26806FEF20999A250089292C /* RNCryptor+Swift.h in Headers */ = {isa = PBXBuildFile; fileRef = 26806FA620999A230089292C /* RNCryptor+Swift.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		26806FF020999A250089292C /* RNCryptor-Prefix.pch in Headers */ = {isa = PBXBuildFile; fileRef = 26806FA720999A230089292C /* RNCryptor-Prefix.pch */; };
+		26806FF120999A250089292C /* RNCryptor.h in Headers */ = {isa = PBXBuildFile; fileRef = 26806FA820999A230089292C /* RNCryptor.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		26806FF220999A250089292C /* RNCryptor.m in Sources */ = {isa = PBXBuildFile; fileRef = 26806FA920999A230089292C /* RNCryptor.m */; };
+		26806FF320999A250089292C /* RNCryptorEngine.h in Headers */ = {isa = PBXBuildFile; fileRef = 26806FAA20999A230089292C /* RNCryptorEngine.h */; };
+		26806FF420999A250089292C /* RNCryptorEngine.m in Sources */ = {isa = PBXBuildFile; fileRef = 26806FAB20999A230089292C /* RNCryptorEngine.m */; };
+		26806FF520999A250089292C /* RNDecryptor.h in Headers */ = {isa = PBXBuildFile; fileRef = 26806FAC20999A230089292C /* RNDecryptor.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		26806FF620999A250089292C /* RNDecryptor.m in Sources */ = {isa = PBXBuildFile; fileRef = 26806FAD20999A230089292C /* RNDecryptor.m */; };
+		26806FF720999A250089292C /* RNEncryptor.h in Headers */ = {isa = PBXBuildFile; fileRef = 26806FAE20999A230089292C /* RNEncryptor.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		26806FF820999A250089292C /* RNEncryptor.m in Sources */ = {isa = PBXBuildFile; fileRef = 26806FAF20999A230089292C /* RNEncryptor.m */; };
+		26806FF920999A250089292C /* KeychainWrapper.h in Headers */ = {isa = PBXBuildFile; fileRef = 26806FB120999A230089292C /* KeychainWrapper.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		26806FFA20999A250089292C /* KeychainWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 26806FB220999A230089292C /* KeychainWrapper.m */; };
+		26806FFB20999A250089292C /* UUIDGenerator.h in Headers */ = {isa = PBXBuildFile; fileRef = 26806FB320999A230089292C /* UUIDGenerator.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		26806FFC20999A250089292C /* UUIDGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 26806FB420999A230089292C /* UUIDGenerator.m */; };
+		26806FFD20999A250089292C /* DateManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 26806FB620999A240089292C /* DateManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		26806FFE20999A250089292C /* DateManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 26806FB720999A240089292C /* DateManager.m */; };
+		26806FFF20999A250089292C /* NGRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26806FB920999A240089292C /* NGRule.swift */; };
+		2680700020999A260089292C /* NGRuleSystem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26806FBA20999A240089292C /* NGRuleSystem.swift */; };
+		2680700120999A260089292C /* ResolutionStrategy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26806FBB20999A240089292C /* ResolutionStrategy.swift */; };
+		2680700220999A260089292C /* ValidationRules.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26806FBC20999A240089292C /* ValidationRules.swift */; };
+		2680700320999A260089292C /* Hibernate+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26806FBF20999A240089292C /* Hibernate+CoreDataClass.swift */; };
+		2680700420999A260089292C /* Hibernate+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26806FC020999A240089292C /* Hibernate+CoreDataProperties.swift */; };
+		2680700520999A260089292C /* NGCoreObject+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26806FC120999A240089292C /* NGCoreObject+CoreDataProperties.swift */; };
+		2680700620999A260089292C /* QueueStore.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 26806FC220999A240089292C /* QueueStore.xcdatamodeld */; };
+		2680700720999A260089292C /* AsynchOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = 26806FC620999A240089292C /* AsynchOperation.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2680700820999A260089292C /* AsynchOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 26806FC720999A240089292C /* AsynchOperation.m */; };
+		2680700920999A260089292C /* OperationGroup.h in Headers */ = {isa = PBXBuildFile; fileRef = 26806FC820999A240089292C /* OperationGroup.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2680700A20999A260089292C /* OperationGroup.m in Sources */ = {isa = PBXBuildFile; fileRef = 26806FC920999A240089292C /* OperationGroup.m */; };
+		2680700B20999A260089292C /* OperationProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 26806FCA20999A240089292C /* OperationProtocol.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2680700C20999A260089292C /* QueueManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 26806FCC20999A240089292C /* QueueManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2680700D20999A260089292C /* QueueManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 26806FCD20999A240089292C /* QueueManager.m */; };
+		2680701220999A260089292C /* AsynchImage.h in Headers */ = {isa = PBXBuildFile; fileRef = 26806FD420999A240089292C /* AsynchImage.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2680701320999A260089292C /* AsynchImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 26806FD520999A240089292C /* AsynchImage.m */; };
+		2680701420999A260089292C /* AsynchImagePrefetcher.h in Headers */ = {isa = PBXBuildFile; fileRef = 26806FD620999A240089292C /* AsynchImagePrefetcher.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2680701520999A260089292C /* AsynchImagePrefetcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 26806FD720999A240089292C /* AsynchImagePrefetcher.m */; };
+		2680701820999A260089292C /* Credential.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26806FDD20999A250089292C /* Credential.swift */; };
+		2680701920999A260089292C /* OAuth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26806FDE20999A250089292C /* OAuth.swift */; };
+		2680701A20999A260089292C /* PassCode.h in Headers */ = {isa = PBXBuildFile; fileRef = 26806FE020999A250089292C /* PassCode.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2680701B20999A260089292C /* PassCode.m in Sources */ = {isa = PBXBuildFile; fileRef = 26806FE120999A250089292C /* PassCode.m */; };
+		2680701C20999A260089292C /* Registration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26806FE220999A250089292C /* Registration.swift */; };
+		2680701D20999A260089292C /* UserProfile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26806FE320999A250089292C /* UserProfile.swift */; };
+		2680701E20999A260089292C /* UserManagement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26806FE420999A250089292C /* UserManagement.swift */; };
+		2680701F20999A260089292C /* AlphabeticalSort.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26806FE620999A250089292C /* AlphabeticalSort.swift */; };
+		2680702020999A260089292C /* DateSort.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26806FE720999A250089292C /* DateSort.swift */; };
+		2680702120999A260089292C /* NumericSort.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26806FE820999A250089292C /* NumericSort.swift */; };
+		2680702220999A260089292C /* SortCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26806FE920999A250089292C /* SortCommand.swift */; };
+		2680702320999A260089292C /* RNCryptorHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = 26806FEB20999A250089292C /* RNCryptorHelper.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2680702420999A260089292C /* RNCryptorHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 26806FEC20999A250089292C /* RNCryptorHelper.m */; };
+		2680702520999A260089292C /* SecureFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26806FED20999A250089292C /* SecureFile.swift */; };
+		2680702F20999BEC0089292C /* Router.h in Headers */ = {isa = PBXBuildFile; fileRef = 2680702720999BEC0089292C /* Router.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2680703020999BEC0089292C /* Router.m in Sources */ = {isa = PBXBuildFile; fileRef = 2680702820999BEC0089292C /* Router.m */; };
+		2680703120999BEC0089292C /* RouterProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 2680702920999BEC0089292C /* RouterProtocol.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2680703220999BEC0089292C /* AppInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = 2680702B20999BEC0089292C /* AppInfo.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2680703320999BEC0089292C /* AppInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 2680702C20999BEC0089292C /* AppInfo.m */; };
+		2680703420999BEC0089292C /* AppStoryboard.h in Headers */ = {isa = PBXBuildFile; fileRef = 2680702D20999BEC0089292C /* AppStoryboard.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2680703520999BEC0089292C /* AppStoryboard.m in Sources */ = {isa = PBXBuildFile; fileRef = 2680702E20999BEC0089292C /* AppStoryboard.m */; };
+		268070372099B2600089292C /* CoreDataStack.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 268070362099B2600089292C /* CoreDataStack.framework */; };
+		268070382099B2600089292C /* CoreDataStack.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 268070362099B2600089292C /* CoreDataStack.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		2680703A2099B2710089292C /* CoreDataStack.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 268070362099B2600089292C /* CoreDataStack.framework */; };
+		2680703C2099B33A0089292C /* FileSystemSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2680703B2099B33A0089292C /* FileSystemSDK.framework */; };
+		2680703D2099B33A0089292C /* FileSystemSDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2680703B2099B33A0089292C /* FileSystemSDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		2680703E2099B3440089292C /* FileSystemSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2680703B2099B33A0089292C /* FileSystemSDK.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		26806F73209978080089292C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 26806F56209978070089292C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 26806F5D209978070089292C;
+			remoteInfo = iOSAppKit;
+		};
+		26806F902099994C0089292C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 26806F56209978070089292C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 26806F852099994B0089292C;
+			remoteInfo = NGAppKit;
+		};
+		26806F922099994C0089292C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 26806F56209978070089292C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 26806F5D209978070089292C;
+			remoteInfo = iOSAppKitExample;
+		};
+		26806F992099994C0089292C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 26806F56209978070089292C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 26806F852099994B0089292C;
+			remoteInfo = NGAppKit;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		26806FA02099994C0089292C /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				268070382099B2600089292C /* CoreDataStack.framework in Embed Frameworks */,
+				2680703D2099B33A0089292C /* FileSystemSDK.framework in Embed Frameworks */,
+				26806F9C2099994C0089292C /* NGAppKit.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		26806F5E209978070089292C /* iOSAppKitExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSAppKitExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		26806F61209978070089292C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		26806F63209978070089292C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		26806F66209978070089292C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		26806F68209978070089292C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		26806F6B209978070089292C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		26806F6D209978080089292C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		26806F72209978080089292C /* iOSAppKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iOSAppKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		26806F76209978080089292C /* iOSAppKitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOSAppKitTests.swift; sourceTree = "<group>"; };
+		26806F78209978080089292C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		26806F862099994B0089292C /* NGAppKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = NGAppKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		26806F882099994C0089292C /* NGAppKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = NGAppKit.h; sourceTree = "<group>"; };
+		26806F892099994C0089292C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		26806F8E2099994C0089292C /* NGAppKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NGAppKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		26806F952099994C0089292C /* NGAppKitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NGAppKitTests.swift; sourceTree = "<group>"; };
+		26806F972099994C0089292C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		26806FA520999A230089292C /* RNCryptor+Private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "RNCryptor+Private.h"; sourceTree = "<group>"; };
+		26806FA620999A230089292C /* RNCryptor+Swift.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "RNCryptor+Swift.h"; sourceTree = "<group>"; };
+		26806FA720999A230089292C /* RNCryptor-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "RNCryptor-Prefix.pch"; sourceTree = "<group>"; };
+		26806FA820999A230089292C /* RNCryptor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RNCryptor.h; sourceTree = "<group>"; };
+		26806FA920999A230089292C /* RNCryptor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RNCryptor.m; sourceTree = "<group>"; };
+		26806FAA20999A230089292C /* RNCryptorEngine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RNCryptorEngine.h; sourceTree = "<group>"; };
+		26806FAB20999A230089292C /* RNCryptorEngine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RNCryptorEngine.m; sourceTree = "<group>"; };
+		26806FAC20999A230089292C /* RNDecryptor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RNDecryptor.h; sourceTree = "<group>"; };
+		26806FAD20999A230089292C /* RNDecryptor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RNDecryptor.m; sourceTree = "<group>"; };
+		26806FAE20999A230089292C /* RNEncryptor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RNEncryptor.h; sourceTree = "<group>"; };
+		26806FAF20999A230089292C /* RNEncryptor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RNEncryptor.m; sourceTree = "<group>"; };
+		26806FB120999A230089292C /* KeychainWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KeychainWrapper.h; sourceTree = "<group>"; };
+		26806FB220999A230089292C /* KeychainWrapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KeychainWrapper.m; sourceTree = "<group>"; };
+		26806FB320999A230089292C /* UUIDGenerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UUIDGenerator.h; sourceTree = "<group>"; };
+		26806FB420999A230089292C /* UUIDGenerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UUIDGenerator.m; sourceTree = "<group>"; };
+		26806FB620999A240089292C /* DateManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DateManager.h; sourceTree = "<group>"; };
+		26806FB720999A240089292C /* DateManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DateManager.m; sourceTree = "<group>"; };
+		26806FB920999A240089292C /* NGRule.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NGRule.swift; sourceTree = "<group>"; };
+		26806FBA20999A240089292C /* NGRuleSystem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NGRuleSystem.swift; sourceTree = "<group>"; };
+		26806FBB20999A240089292C /* ResolutionStrategy.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResolutionStrategy.swift; sourceTree = "<group>"; };
+		26806FBC20999A240089292C /* ValidationRules.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ValidationRules.swift; sourceTree = "<group>"; };
+		26806FBF20999A240089292C /* Hibernate+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Hibernate+CoreDataClass.swift"; sourceTree = "<group>"; };
+		26806FC020999A240089292C /* Hibernate+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Hibernate+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		26806FC120999A240089292C /* NGCoreObject+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NGCoreObject+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		26806FC320999A240089292C /* QueueStore.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = QueueStore.xcdatamodel; sourceTree = "<group>"; };
+		26806FC620999A240089292C /* AsynchOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AsynchOperation.h; sourceTree = "<group>"; };
+		26806FC720999A240089292C /* AsynchOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AsynchOperation.m; sourceTree = "<group>"; };
+		26806FC820999A240089292C /* OperationGroup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OperationGroup.h; sourceTree = "<group>"; };
+		26806FC920999A240089292C /* OperationGroup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OperationGroup.m; sourceTree = "<group>"; };
+		26806FCA20999A240089292C /* OperationProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OperationProtocol.h; sourceTree = "<group>"; };
+		26806FCC20999A240089292C /* QueueManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QueueManager.h; sourceTree = "<group>"; };
+		26806FCD20999A240089292C /* QueueManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QueueManager.m; sourceTree = "<group>"; };
+		26806FD420999A240089292C /* AsynchImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AsynchImage.h; sourceTree = "<group>"; };
+		26806FD520999A240089292C /* AsynchImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AsynchImage.m; sourceTree = "<group>"; };
+		26806FD620999A240089292C /* AsynchImagePrefetcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AsynchImagePrefetcher.h; sourceTree = "<group>"; };
+		26806FD720999A240089292C /* AsynchImagePrefetcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AsynchImagePrefetcher.m; sourceTree = "<group>"; };
+		26806FDD20999A250089292C /* Credential.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Credential.swift; sourceTree = "<group>"; };
+		26806FDE20999A250089292C /* OAuth.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OAuth.swift; sourceTree = "<group>"; };
+		26806FE020999A250089292C /* PassCode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PassCode.h; sourceTree = "<group>"; };
+		26806FE120999A250089292C /* PassCode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PassCode.m; sourceTree = "<group>"; };
+		26806FE220999A250089292C /* Registration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Registration.swift; sourceTree = "<group>"; };
+		26806FE320999A250089292C /* UserProfile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserProfile.swift; sourceTree = "<group>"; };
+		26806FE420999A250089292C /* UserManagement.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserManagement.swift; sourceTree = "<group>"; };
+		26806FE620999A250089292C /* AlphabeticalSort.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlphabeticalSort.swift; sourceTree = "<group>"; };
+		26806FE720999A250089292C /* DateSort.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateSort.swift; sourceTree = "<group>"; };
+		26806FE820999A250089292C /* NumericSort.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NumericSort.swift; sourceTree = "<group>"; };
+		26806FE920999A250089292C /* SortCommand.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SortCommand.swift; sourceTree = "<group>"; };
+		26806FEB20999A250089292C /* RNCryptorHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RNCryptorHelper.h; sourceTree = "<group>"; };
+		26806FEC20999A250089292C /* RNCryptorHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RNCryptorHelper.m; sourceTree = "<group>"; };
+		26806FED20999A250089292C /* SecureFile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecureFile.swift; sourceTree = "<group>"; };
+		2680702720999BEC0089292C /* Router.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Router.h; sourceTree = "<group>"; };
+		2680702820999BEC0089292C /* Router.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Router.m; sourceTree = "<group>"; };
+		2680702920999BEC0089292C /* RouterProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RouterProtocol.h; sourceTree = "<group>"; };
+		2680702B20999BEC0089292C /* AppInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppInfo.h; sourceTree = "<group>"; };
+		2680702C20999BEC0089292C /* AppInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppInfo.m; sourceTree = "<group>"; };
+		2680702D20999BEC0089292C /* AppStoryboard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppStoryboard.h; sourceTree = "<group>"; };
+		2680702E20999BEC0089292C /* AppStoryboard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppStoryboard.m; sourceTree = "<group>"; };
+		268070362099B2600089292C /* CoreDataStack.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = CoreDataStack.framework; sourceTree = "<group>"; };
+		2680703B2099B33A0089292C /* FileSystemSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FileSystemSDK.framework; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		26806F5B209978070089292C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				268070372099B2600089292C /* CoreDataStack.framework in Frameworks */,
+				2680703C2099B33A0089292C /* FileSystemSDK.framework in Frameworks */,
+				26806F9B2099994C0089292C /* NGAppKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		26806F6F209978080089292C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		26806F822099994B0089292C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2680703E2099B3440089292C /* FileSystemSDK.framework in Frameworks */,
+				2680703A2099B2710089292C /* CoreDataStack.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		26806F8B2099994C0089292C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				26806F8F2099994C0089292C /* NGAppKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		26806F55209978070089292C = {
+			isa = PBXGroup;
+			children = (
+				2680703B2099B33A0089292C /* FileSystemSDK.framework */,
+				268070362099B2600089292C /* CoreDataStack.framework */,
+				26806F60209978070089292C /* iOSAppKitExample */,
+				26806F75209978080089292C /* iOSAppKitTests */,
+				26806F872099994C0089292C /* NGAppKit */,
+				26806F942099994C0089292C /* NGAppKitTests */,
+				26806F5F209978070089292C /* Products */,
+				268070392099B2710089292C /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		26806F5F209978070089292C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				26806F5E209978070089292C /* iOSAppKitExample.app */,
+				26806F72209978080089292C /* iOSAppKitTests.xctest */,
+				26806F862099994B0089292C /* NGAppKit.framework */,
+				26806F8E2099994C0089292C /* NGAppKitTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		26806F60209978070089292C /* iOSAppKitExample */ = {
+			isa = PBXGroup;
+			children = (
+				26806F61209978070089292C /* AppDelegate.swift */,
+				26806F63209978070089292C /* ViewController.swift */,
+				26806F65209978070089292C /* Main.storyboard */,
+				26806F68209978070089292C /* Assets.xcassets */,
+				26806F6A209978070089292C /* LaunchScreen.storyboard */,
+				26806F6D209978080089292C /* Info.plist */,
+			);
+			path = iOSAppKitExample;
+			sourceTree = "<group>";
+		};
+		26806F75209978080089292C /* iOSAppKitTests */ = {
+			isa = PBXGroup;
+			children = (
+				26806F76209978080089292C /* iOSAppKitTests.swift */,
+				26806F78209978080089292C /* Info.plist */,
+			);
+			path = iOSAppKitTests;
+			sourceTree = "<group>";
+		};
+		26806F872099994C0089292C /* NGAppKit */ = {
+			isa = PBXGroup;
+			children = (
+				2680702A20999BEC0089292C /* AppStoryboard */,
+				2680702620999BEC0089292C /* RoutingProtocols */,
+				26806FD320999A240089292C /* AsynchImage */,
+				26806FB520999A240089292C /* DateManager */,
+				26806FBD20999A240089292C /* OperationQueue */,
+				26806FA420999A230089292C /* RNCryptor */,
+				26806FEA20999A250089292C /* SecureFile */,
+				26806FE520999A250089292C /* SortCommands */,
+				26806FDB20999A250089292C /* UserAccount */,
+				26806FB020999A230089292C /* UUIDGenarator */,
+				26806FB820999A240089292C /* Validator */,
+				26806F882099994C0089292C /* NGAppKit.h */,
+				26806F892099994C0089292C /* Info.plist */,
+			);
+			path = NGAppKit;
+			sourceTree = "<group>";
+		};
+		26806F942099994C0089292C /* NGAppKitTests */ = {
+			isa = PBXGroup;
+			children = (
+				26806F952099994C0089292C /* NGAppKitTests.swift */,
+				26806F972099994C0089292C /* Info.plist */,
+			);
+			path = NGAppKitTests;
+			sourceTree = "<group>";
+		};
+		26806FA420999A230089292C /* RNCryptor */ = {
+			isa = PBXGroup;
+			children = (
+				26806FA520999A230089292C /* RNCryptor+Private.h */,
+				26806FA620999A230089292C /* RNCryptor+Swift.h */,
+				26806FA720999A230089292C /* RNCryptor-Prefix.pch */,
+				26806FA820999A230089292C /* RNCryptor.h */,
+				26806FA920999A230089292C /* RNCryptor.m */,
+				26806FAA20999A230089292C /* RNCryptorEngine.h */,
+				26806FAB20999A230089292C /* RNCryptorEngine.m */,
+				26806FAC20999A230089292C /* RNDecryptor.h */,
+				26806FAD20999A230089292C /* RNDecryptor.m */,
+				26806FAE20999A230089292C /* RNEncryptor.h */,
+				26806FAF20999A230089292C /* RNEncryptor.m */,
+			);
+			path = RNCryptor;
+			sourceTree = "<group>";
+		};
+		26806FB020999A230089292C /* UUIDGenarator */ = {
+			isa = PBXGroup;
+			children = (
+				26806FB120999A230089292C /* KeychainWrapper.h */,
+				26806FB220999A230089292C /* KeychainWrapper.m */,
+				26806FB320999A230089292C /* UUIDGenerator.h */,
+				26806FB420999A230089292C /* UUIDGenerator.m */,
+			);
+			path = UUIDGenarator;
+			sourceTree = "<group>";
+		};
+		26806FB520999A240089292C /* DateManager */ = {
+			isa = PBXGroup;
+			children = (
+				26806FB620999A240089292C /* DateManager.h */,
+				26806FB720999A240089292C /* DateManager.m */,
+			);
+			path = DateManager;
+			sourceTree = "<group>";
+		};
+		26806FB820999A240089292C /* Validator */ = {
+			isa = PBXGroup;
+			children = (
+				26806FB920999A240089292C /* NGRule.swift */,
+				26806FBA20999A240089292C /* NGRuleSystem.swift */,
+				26806FBB20999A240089292C /* ResolutionStrategy.swift */,
+				26806FBC20999A240089292C /* ValidationRules.swift */,
+			);
+			path = Validator;
+			sourceTree = "<group>";
+		};
+		26806FBD20999A240089292C /* OperationQueue */ = {
+			isa = PBXGroup;
+			children = (
+				26806FBE20999A240089292C /* Models */,
+				26806FC420999A240089292C /* Operations */,
+				26806FCB20999A240089292C /* QueueManager */,
+			);
+			path = OperationQueue;
+			sourceTree = "<group>";
+		};
+		26806FBE20999A240089292C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				26806FBF20999A240089292C /* Hibernate+CoreDataClass.swift */,
+				26806FC020999A240089292C /* Hibernate+CoreDataProperties.swift */,
+				26806FC120999A240089292C /* NGCoreObject+CoreDataProperties.swift */,
+				26806FC220999A240089292C /* QueueStore.xcdatamodeld */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		26806FC420999A240089292C /* Operations */ = {
+			isa = PBXGroup;
+			children = (
+				26806FC520999A240089292C /* Core */,
+			);
+			path = Operations;
+			sourceTree = "<group>";
+		};
+		26806FC520999A240089292C /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				26806FC620999A240089292C /* AsynchOperation.h */,
+				26806FC720999A240089292C /* AsynchOperation.m */,
+				26806FC820999A240089292C /* OperationGroup.h */,
+				26806FC920999A240089292C /* OperationGroup.m */,
+				26806FCA20999A240089292C /* OperationProtocol.h */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		26806FCB20999A240089292C /* QueueManager */ = {
+			isa = PBXGroup;
+			children = (
+				26806FCC20999A240089292C /* QueueManager.h */,
+				26806FCD20999A240089292C /* QueueManager.m */,
+			);
+			path = QueueManager;
+			sourceTree = "<group>";
+		};
+		26806FD320999A240089292C /* AsynchImage */ = {
+			isa = PBXGroup;
+			children = (
+				26806FD420999A240089292C /* AsynchImage.h */,
+				26806FD520999A240089292C /* AsynchImage.m */,
+				26806FD620999A240089292C /* AsynchImagePrefetcher.h */,
+				26806FD720999A240089292C /* AsynchImagePrefetcher.m */,
+			);
+			path = AsynchImage;
+			sourceTree = "<group>";
+		};
+		26806FDB20999A250089292C /* UserAccount */ = {
+			isa = PBXGroup;
+			children = (
+				26806FDC20999A250089292C /* Models */,
+				26806FE420999A250089292C /* UserManagement.swift */,
+			);
+			path = UserAccount;
+			sourceTree = "<group>";
+		};
+		26806FDC20999A250089292C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				26806FDD20999A250089292C /* Credential.swift */,
+				26806FDE20999A250089292C /* OAuth.swift */,
+				26806FDF20999A250089292C /* PassCode */,
+				26806FE220999A250089292C /* Registration.swift */,
+				26806FE320999A250089292C /* UserProfile.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		26806FDF20999A250089292C /* PassCode */ = {
+			isa = PBXGroup;
+			children = (
+				26806FE020999A250089292C /* PassCode.h */,
+				26806FE120999A250089292C /* PassCode.m */,
+			);
+			path = PassCode;
+			sourceTree = "<group>";
+		};
+		26806FE520999A250089292C /* SortCommands */ = {
+			isa = PBXGroup;
+			children = (
+				26806FE620999A250089292C /* AlphabeticalSort.swift */,
+				26806FE720999A250089292C /* DateSort.swift */,
+				26806FE820999A250089292C /* NumericSort.swift */,
+				26806FE920999A250089292C /* SortCommand.swift */,
+			);
+			path = SortCommands;
+			sourceTree = "<group>";
+		};
+		26806FEA20999A250089292C /* SecureFile */ = {
+			isa = PBXGroup;
+			children = (
+				26806FEB20999A250089292C /* RNCryptorHelper.h */,
+				26806FEC20999A250089292C /* RNCryptorHelper.m */,
+				26806FED20999A250089292C /* SecureFile.swift */,
+			);
+			path = SecureFile;
+			sourceTree = "<group>";
+		};
+		2680702620999BEC0089292C /* RoutingProtocols */ = {
+			isa = PBXGroup;
+			children = (
+				2680702720999BEC0089292C /* Router.h */,
+				2680702820999BEC0089292C /* Router.m */,
+				2680702920999BEC0089292C /* RouterProtocol.h */,
+			);
+			path = RoutingProtocols;
+			sourceTree = "<group>";
+		};
+		2680702A20999BEC0089292C /* AppStoryboard */ = {
+			isa = PBXGroup;
+			children = (
+				2680702B20999BEC0089292C /* AppInfo.h */,
+				2680702C20999BEC0089292C /* AppInfo.m */,
+				2680702D20999BEC0089292C /* AppStoryboard.h */,
+				2680702E20999BEC0089292C /* AppStoryboard.m */,
+			);
+			path = AppStoryboard;
+			sourceTree = "<group>";
+		};
+		268070392099B2710089292C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		26806F832099994B0089292C /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				26806FF520999A250089292C /* RNDecryptor.h in Headers */,
+				2680701420999A260089292C /* AsynchImagePrefetcher.h in Headers */,
+				26806FF720999A250089292C /* RNEncryptor.h in Headers */,
+				2680700B20999A260089292C /* OperationProtocol.h in Headers */,
+				2680700C20999A260089292C /* QueueManager.h in Headers */,
+				2680700720999A260089292C /* AsynchOperation.h in Headers */,
+				26806FF320999A250089292C /* RNCryptorEngine.h in Headers */,
+				26806FFB20999A250089292C /* UUIDGenerator.h in Headers */,
+				26806FFD20999A250089292C /* DateManager.h in Headers */,
+				26806FEF20999A250089292C /* RNCryptor+Swift.h in Headers */,
+				2680700920999A260089292C /* OperationGroup.h in Headers */,
+				26806FEE20999A250089292C /* RNCryptor+Private.h in Headers */,
+				2680701A20999A260089292C /* PassCode.h in Headers */,
+				26806F982099994C0089292C /* NGAppKit.h in Headers */,
+				2680701220999A260089292C /* AsynchImage.h in Headers */,
+				2680702320999A260089292C /* RNCryptorHelper.h in Headers */,
+				2680703220999BEC0089292C /* AppInfo.h in Headers */,
+				26806FF920999A250089292C /* KeychainWrapper.h in Headers */,
+				26806FF020999A250089292C /* RNCryptor-Prefix.pch in Headers */,
+				26806FF120999A250089292C /* RNCryptor.h in Headers */,
+				2680702F20999BEC0089292C /* Router.h in Headers */,
+				2680703120999BEC0089292C /* RouterProtocol.h in Headers */,
+				2680703420999BEC0089292C /* AppStoryboard.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		26806F5D209978070089292C /* iOSAppKitExample */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 26806F7B209978080089292C /* Build configuration list for PBXNativeTarget "iOSAppKitExample" */;
+			buildPhases = (
+				26806F5A209978070089292C /* Sources */,
+				26806F5B209978070089292C /* Frameworks */,
+				26806F5C209978070089292C /* Resources */,
+				26806FA02099994C0089292C /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				26806F9A2099994C0089292C /* PBXTargetDependency */,
+			);
+			name = iOSAppKitExample;
+			productName = iOSAppKit;
+			productReference = 26806F5E209978070089292C /* iOSAppKitExample.app */;
+			productType = "com.apple.product-type.application";
+		};
+		26806F71209978080089292C /* iOSAppKitTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 26806F7E209978080089292C /* Build configuration list for PBXNativeTarget "iOSAppKitTests" */;
+			buildPhases = (
+				26806F6E209978080089292C /* Sources */,
+				26806F6F209978080089292C /* Frameworks */,
+				26806F70209978080089292C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				26806F74209978080089292C /* PBXTargetDependency */,
+			);
+			name = iOSAppKitTests;
+			productName = iOSAppKitTests;
+			productReference = 26806F72209978080089292C /* iOSAppKitTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		26806F852099994B0089292C /* NGAppKit */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 26806F9D2099994C0089292C /* Build configuration list for PBXNativeTarget "NGAppKit" */;
+			buildPhases = (
+				26806F812099994B0089292C /* Sources */,
+				26806F822099994B0089292C /* Frameworks */,
+				26806F832099994B0089292C /* Headers */,
+				26806F842099994B0089292C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = NGAppKit;
+			productName = NGAppKit;
+			productReference = 26806F862099994B0089292C /* NGAppKit.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		26806F8D2099994C0089292C /* NGAppKitTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 26806FA12099994C0089292C /* Build configuration list for PBXNativeTarget "NGAppKitTests" */;
+			buildPhases = (
+				26806F8A2099994C0089292C /* Sources */,
+				26806F8B2099994C0089292C /* Frameworks */,
+				26806F8C2099994C0089292C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				26806F912099994C0089292C /* PBXTargetDependency */,
+				26806F932099994C0089292C /* PBXTargetDependency */,
+			);
+			name = NGAppKitTests;
+			productName = NGAppKitTests;
+			productReference = 26806F8E2099994C0089292C /* NGAppKitTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		26806F56209978070089292C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0900;
+				LastUpgradeCheck = 0900;
+				ORGANIZATIONNAME = "Towhid Islam";
+				TargetAttributes = {
+					26806F5D209978070089292C = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+					};
+					26806F71209978080089292C = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 26806F5D209978070089292C;
+					};
+					26806F852099994B0089292C = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+					};
+					26806F8D2099994C0089292C = {
+						CreatedOnToolsVersion = 9.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 26806F5D209978070089292C;
+					};
+				};
+			};
+			buildConfigurationList = 26806F59209978070089292C /* Build configuration list for PBXProject "iOSAppKit" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 26806F55209978070089292C;
+			productRefGroup = 26806F5F209978070089292C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				26806F5D209978070089292C /* iOSAppKitExample */,
+				26806F71209978080089292C /* iOSAppKitTests */,
+				26806F852099994B0089292C /* NGAppKit */,
+				26806F8D2099994C0089292C /* NGAppKitTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		26806F5C209978070089292C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				26806F6C209978070089292C /* LaunchScreen.storyboard in Resources */,
+				26806F69209978070089292C /* Assets.xcassets in Resources */,
+				26806F67209978070089292C /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		26806F70209978080089292C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		26806F842099994B0089292C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		26806F8C2099994C0089292C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		26806F5A209978070089292C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				26806F64209978070089292C /* ViewController.swift in Sources */,
+				26806F62209978070089292C /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		26806F6E209978080089292C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				26806F77209978080089292C /* iOSAppKitTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		26806F812099994B0089292C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2680702520999A260089292C /* SecureFile.swift in Sources */,
+				2680700120999A260089292C /* ResolutionStrategy.swift in Sources */,
+				2680701B20999A260089292C /* PassCode.m in Sources */,
+				26806FF220999A250089292C /* RNCryptor.m in Sources */,
+				2680701F20999A260089292C /* AlphabeticalSort.swift in Sources */,
+				2680701520999A260089292C /* AsynchImagePrefetcher.m in Sources */,
+				26806FF620999A250089292C /* RNDecryptor.m in Sources */,
+				2680700820999A260089292C /* AsynchOperation.m in Sources */,
+				2680701320999A260089292C /* AsynchImage.m in Sources */,
+				2680700020999A260089292C /* NGRuleSystem.swift in Sources */,
+				2680701E20999A260089292C /* UserManagement.swift in Sources */,
+				2680701820999A260089292C /* Credential.swift in Sources */,
+				2680702420999A260089292C /* RNCryptorHelper.m in Sources */,
+				2680700620999A260089292C /* QueueStore.xcdatamodeld in Sources */,
+				2680700A20999A260089292C /* OperationGroup.m in Sources */,
+				2680700D20999A260089292C /* QueueManager.m in Sources */,
+				2680701D20999A260089292C /* UserProfile.swift in Sources */,
+				26806FFE20999A250089292C /* DateManager.m in Sources */,
+				2680702020999A260089292C /* DateSort.swift in Sources */,
+				2680701920999A260089292C /* OAuth.swift in Sources */,
+				26806FF820999A250089292C /* RNEncryptor.m in Sources */,
+				2680700320999A260089292C /* Hibernate+CoreDataClass.swift in Sources */,
+				2680703320999BEC0089292C /* AppInfo.m in Sources */,
+				2680700420999A260089292C /* Hibernate+CoreDataProperties.swift in Sources */,
+				2680702120999A260089292C /* NumericSort.swift in Sources */,
+				26806FFF20999A250089292C /* NGRule.swift in Sources */,
+				26806FF420999A250089292C /* RNCryptorEngine.m in Sources */,
+				2680700520999A260089292C /* NGCoreObject+CoreDataProperties.swift in Sources */,
+				26806FFC20999A250089292C /* UUIDGenerator.m in Sources */,
+				2680703520999BEC0089292C /* AppStoryboard.m in Sources */,
+				26806FFA20999A250089292C /* KeychainWrapper.m in Sources */,
+				2680701C20999A260089292C /* Registration.swift in Sources */,
+				2680700220999A260089292C /* ValidationRules.swift in Sources */,
+				2680703020999BEC0089292C /* Router.m in Sources */,
+				2680702220999A260089292C /* SortCommand.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		26806F8A2099994C0089292C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				26806F962099994C0089292C /* NGAppKitTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		26806F74209978080089292C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 26806F5D209978070089292C /* iOSAppKitExample */;
+			targetProxy = 26806F73209978080089292C /* PBXContainerItemProxy */;
+		};
+		26806F912099994C0089292C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 26806F852099994B0089292C /* NGAppKit */;
+			targetProxy = 26806F902099994C0089292C /* PBXContainerItemProxy */;
+		};
+		26806F932099994C0089292C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 26806F5D209978070089292C /* iOSAppKitExample */;
+			targetProxy = 26806F922099994C0089292C /* PBXContainerItemProxy */;
+		};
+		26806F9A2099994C0089292C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 26806F852099994B0089292C /* NGAppKit */;
+			targetProxy = 26806F992099994C0089292C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		26806F65209978070089292C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				26806F66209978070089292C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		26806F6A209978070089292C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				26806F6B209978070089292C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		26806F79209978080089292C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		26806F7A209978080089292C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		26806F7C209978080089292C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = M622GQ77LE;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = iOSAppKitExample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.swift.iOSAppKit;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		26806F7D209978080089292C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = M622GQ77LE;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = iOSAppKitExample/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.swift.iOSAppKit;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		26806F7F209978080089292C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = M622GQ77LE;
+				INFOPLIST_FILE = iOSAppKitTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.swift.iOSAppKitTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/iOSAppKit.app/iOSAppKit";
+			};
+			name = Debug;
+		};
+		26806F80209978080089292C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = M622GQ77LE;
+				INFOPLIST_FILE = iOSAppKitTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.swift.iOSAppKitTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/iOSAppKit.app/iOSAppKit";
+			};
+			name = Release;
+		};
+		26806F9E2099994C0089292C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = M622GQ77LE;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = NGAppKit/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.swift.NGAppKit;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		26806F9F2099994C0089292C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = M622GQ77LE;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = NGAppKit/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.swift.NGAppKit;
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		26806FA22099994C0089292C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = M622GQ77LE;
+				INFOPLIST_FILE = NGAppKitTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.swift.NGAppKitTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/iOSAppKitExample.app/iOSAppKitExample";
+			};
+			name = Debug;
+		};
+		26806FA32099994C0089292C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = M622GQ77LE;
+				INFOPLIST_FILE = NGAppKitTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.swift.NGAppKitTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/iOSAppKitExample.app/iOSAppKitExample";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		26806F59209978070089292C /* Build configuration list for PBXProject "iOSAppKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				26806F79209978080089292C /* Debug */,
+				26806F7A209978080089292C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		26806F7B209978080089292C /* Build configuration list for PBXNativeTarget "iOSAppKitExample" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				26806F7C209978080089292C /* Debug */,
+				26806F7D209978080089292C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		26806F7E209978080089292C /* Build configuration list for PBXNativeTarget "iOSAppKitTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				26806F7F209978080089292C /* Debug */,
+				26806F80209978080089292C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		26806F9D2099994C0089292C /* Build configuration list for PBXNativeTarget "NGAppKit" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				26806F9E2099994C0089292C /* Debug */,
+				26806F9F2099994C0089292C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		26806FA12099994C0089292C /* Build configuration list for PBXNativeTarget "NGAppKitTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				26806FA22099994C0089292C /* Debug */,
+				26806FA32099994C0089292C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		26806FC220999A240089292C /* QueueStore.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				26806FC320999A240089292C /* QueueStore.xcdatamodel */,
+			);
+			currentVersion = 26806FC320999A240089292C /* QueueStore.xcdatamodel */;
+			path = QueueStore.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 26806F56209978070089292C /* Project object */;
+}

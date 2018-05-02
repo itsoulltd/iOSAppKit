@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="11759" systemVersion="15G1510" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Hibernate" representedClassName="Hibernate" parentEntity="NGCoreObject" syncable="YES">
+        <attribute name="createDate" optional="YES" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="info" optional="YES" attributeType="Transformable" syncable="YES"/>
+    </entity>
+    <entity name="NGCoreObject" representedClassName="NGCoreObject" syncable="YES">
+        <attribute name="guid" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="NGCoreObject" positionX="-63" positionY="-18" width="128" height="60"/>
+        <element name="Hibernate" positionX="-54" positionY="0" width="128" height="75"/>
+    </elements>
+</model>
