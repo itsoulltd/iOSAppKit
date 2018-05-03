@@ -9,7 +9,7 @@
 #import <Foundation/Foundation.h>
 #import <CoreData/CoreData.h>
 
-extern NSString* const NGDefaultManagedContextDidMergeNotification;
+extern NSString* const KGDefaultManagedContextDidMergeNotification;
 
 #define kInsertedIDs @"inserted-IdKey"
 #define kUpdatedIDs @"updated-IdKey"

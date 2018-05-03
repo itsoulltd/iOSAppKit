@@ -2,7 +2,7 @@
 //  CoreNetworkStack.h
 //  CoreNetworkStack
 //
-//  Created by Towhid Islam on 9/23/17.
+//  Created by Towhid Islam on 3/4/17.
 //  Copyright © 2017 Towhid Islam. All rights reserved.
 //
 
@@ -13,6 +13,8 @@ FOUNDATION_EXPORT double CoreNetworkStackVersionNumber;
 
 //! Project version string for CoreNetworkStack.
 FOUNDATION_EXPORT const unsigned char CoreNetworkStackVersionString[];
+
+// In this header, you should import all the public headers of your framework using statements like #import <CoreNetworkStack/PublicHeader.h>
 
 #import <CoreNetworkStack/CommunicationHeader.h>
 #import <CoreNetworkStack/ContentDelegate.h>
