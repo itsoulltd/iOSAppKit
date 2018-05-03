@@ -3,7 +3,7 @@
 //  StartUpProject
 //
 //  Created by Towhidul Islam on 12/20/16.
-//  Copyright © 2016 Kite Games Studio. All rights reserved.
+//  Copyright © 2016 ITSoulLab. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
@@ -13,13 +13,13 @@
 
 + (instancetype) load:(NSString*)name;
 
-- (NSString*) resolveClassName:(Class)type;
-
 - (UIViewController*) initialViewController;
 
 - (UIViewController*) viewControllerByType:(Class)type;
 
 - (UIViewController*) viewControllerByStoryboardID:(NSString*)storyboardID;
+
++ (NSString*) resolveClassName:(Class)type;
 
 + (void)configureApplication:(UIApplication *)app mainBundle:(NSBundle*)main;
 

@@ -10,11 +10,12 @@ import UIKit
 import CoreDataStack
 
 @objc(OAuth)
+@objcMembers
 open class OAuth: NGObject {
     
     fileprivate let tokenIdentifier: String = "\(Bundle.main.bundleIdentifier!).user_token"
    
-    var token: String?{
+    public var token: String?{
         get{
             return KeychainWrapper.keychainStringFrom(matchingIdentifier: tokenIdentifier)
         }
@@ -22,7 +23,7 @@ open class OAuth: NGObject {
             KeychainWrapper.createKeychainValue(newValue, forIdentifier: tokenIdentifier)
         }
     }
-    var secretKey: String?
+    public var secretKey: String?
     
     open override func updateValue(_ value: Any!, forKey key: String!) {
         if key == "token"{

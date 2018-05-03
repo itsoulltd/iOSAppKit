@@ -44,7 +44,7 @@ class ViewController: UIViewController {
                     //Router
                     guard let story = AppStoryboard.load("MyBoard") else {return}
                     if let info = RouteTo(info: ["storyboard":"MyBoard"]){
-                        info.viewControllerID = story.resolveClassName(TestViewController.self)
+                        info.viewControllerID = AppStoryboard.resolveClassName(TestViewController.self)
                         self.router.route(from: self, withInfo: info)
                     }
                 }

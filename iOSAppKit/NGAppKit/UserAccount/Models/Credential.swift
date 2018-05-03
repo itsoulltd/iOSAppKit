@@ -10,13 +10,14 @@ import UIKit
 import CoreDataStack
 
 @objc(Credential)
+@objcMembers
 open class Credential: NGObject {
     
     fileprivate let emailIdentifier: String = "\(Bundle.main.bundleIdentifier!).user_email"
     fileprivate let passwordIdentifier: String = "\(Bundle.main.bundleIdentifier!).user_password"
     fileprivate let rememberIdentifier: String = "\(Bundle.main.bundleIdentifier!).user_remember"
     
-    var isRemembered: Bool{
+    public var isRemembered: Bool{
         get{
             let valueInString = KeychainWrapper.keychainStringFrom(matchingIdentifier: rememberIdentifier)
             return (valueInString == nil) ? false : valueInString == "true"
@@ -27,7 +28,7 @@ open class Credential: NGObject {
         }
     }
    
-    var email: String?{
+    public var email: String?{
         get{
             return KeychainWrapper.keychainStringFrom(matchingIdentifier: emailIdentifier)
         }
@@ -36,7 +37,7 @@ open class Credential: NGObject {
         }
     }
     
-    var password: String?{
+    public var password: String?{
         get{
             return KeychainWrapper.keychainStringFrom(matchingIdentifier: passwordIdentifier)
         }

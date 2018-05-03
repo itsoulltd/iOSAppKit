@@ -150,11 +150,11 @@ open class Nor: Logical {
 open class Length: NSObject, Validation {
     
     fileprivate var validLength: Int
-    var targetLength: Int {
+    public var targetLength: Int {
         return validLength
     }
     fileprivate var relation: RelationalOperator
-    var relationOperator: RelationalOperator{
+    public var relationOperator: RelationalOperator{
         return relation
     }
     
@@ -202,7 +202,7 @@ open class RegX: NSObject, Validation {
     
     fileprivate var regxString: String
     
-    var regx: NSRegularExpression? {
+    public var regx: NSRegularExpression? {
         var regEx: NSRegularExpression?
         do {
             regEx = try NSRegularExpression(pattern: regxString, options: NSRegularExpression.Options.caseInsensitive)

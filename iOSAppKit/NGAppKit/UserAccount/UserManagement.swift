@@ -11,9 +11,10 @@ import Foundation
 import CoreDataStack
 
 @objc(UserManagement)
+@objcMembers
 open class UserManagement: NGObject {
     
-    var profile: NGObjectProtocol?{
+    public var profile: NGObjectProtocol?{
         get{
             guard let data = UserDefaults.standard.data(forKey: "userProfileKey") else{
                 return nil
@@ -49,12 +50,12 @@ open class UserManagement: NGObject {
     }
     
     fileprivate var profileType: NGObject.Type = NGObject.self
-    var oauth: OAuth = OAuth()
-    var credential: Credential = Credential()
+    public var oauth: OAuth = OAuth()
+    public var credential: Credential = Credential()
     
-    var loggedIn: Bool = false
+    public var loggedIn: Bool = false
     
-    var token: String? {
+    public var token: String? {
         return oauth.token
     }
     

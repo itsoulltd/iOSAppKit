@@ -9,10 +9,11 @@
 import UIKit
 import CoreDataStack
 
+@objcMembers
 open class Registration: NGObject {
-    var email :NSString?
-    var password :NSString?
-    var passwordConfirmation :NSString?
-    var firstName :NSString?
-    var lastName :NSString?
+    public var email :NSString?
+    public var password :NSString?
+    public var passwordConfirmation :NSString?
+    public var firstName :NSString?
+    public var lastName :NSString?
 }

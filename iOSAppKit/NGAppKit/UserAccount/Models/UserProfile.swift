@@ -10,21 +10,22 @@ import UIKit
 import CoreDataStack
 
 @objc(UserProfile)
+@objcMembers
 open class UserProfile: NGObject {
    
-    var firstName: String?
-    var lastName: String?
-    var name: String {
+    public var firstName: String?
+    public var lastName: String?
+    public var name: String {
         guard let fn = firstName
             , let ln = lastName else {
                 return ""
         }
         return "\(fn) \(ln)"
     }
-    var age: Int?
-    var dob: Date?
-    var profileImagePath: URL?
-    var thumbNailPath: URL?
+    public var age: Int?
+    public var dob: Date?
+    public var profileImagePath: URL?
+    public var thumbNailPath: URL?
     
     open override func updateValue(_ value: Any!, forKey key: String!) {
         

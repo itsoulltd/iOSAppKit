@@ -3,7 +3,7 @@
 //  StartUpProject
 //
 //  Created by Towhidul Islam on 12/20/16.
-//  Copyright © 2016 Kite Games Studio. All rights reserved.
+//  Copyright © 2016 ITSoulLab. All rights reserved.
 //
 
 #import "AppStoryboard.h"
@@ -45,7 +45,7 @@
     return initial;
 }
 
-- (NSString*) resolveClassName:(Class)type{
++ (NSString*) resolveClassName:(Class)type{
     NSString *fullName = NSStringFromClass(type);
     NSString *moduleName = [[AppInfo new] stringValueForKey:BundleName];
     NSString *moduleWithSeparetor = [NSString stringWithFormat:@"%@.",moduleName];
@@ -54,7 +54,7 @@
 }
 
 - (UIViewController *)viewControllerByType:(Class)type{
-    return [self viewControllerByStoryboardID:[self resolveClassName:type]];
+    return [self viewControllerByStoryboardID:[AppStoryboard resolveClassName:type]];
 }
 
 - (UIViewController *)viewControllerByStoryboardID:(NSString *)storyboardID{
