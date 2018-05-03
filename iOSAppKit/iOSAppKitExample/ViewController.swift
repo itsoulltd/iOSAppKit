@@ -13,6 +13,8 @@ class ViewController: UIViewController {
 
     @IBOutlet weak var counterLabel: UILabel!
     
+    fileprivate var router = CustomRouter()
+    
     fileprivate var timer: Timer?
     fileprivate var counter = 0 {
         didSet{
@@ -39,11 +41,11 @@ class ViewController: UIViewController {
                     self.timer?.invalidate()
                     self.timer = nil
                     self.counter = 0
+                    //Router
                     guard let story = AppStoryboard.load("MyBoard") else {return}
-                    let router = Router()
                     if let info = RouteTo(info: ["storyboard":"MyBoard"]){
                         info.viewControllerID = story.resolveClassName(TestViewController.self)
-                        router.route(from: self, withInfo: info)
+                        self.router.route(from: self, withInfo: info)
                     }
                 }
             }

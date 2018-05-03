@@ -85,6 +85,8 @@
 		269FEDA0209B447F004FA261 /* CoreNetworkStack.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 269FED9E209B447F004FA261 /* CoreNetworkStack.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		269FEDA2209B4C6B004FA261 /* MyBoard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 269FEDA1209B4C6B004FA261 /* MyBoard.storyboard */; };
 		269FEDA4209B4CDD004FA261 /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 269FEDA3209B4CDD004FA261 /* TestViewController.swift */; };
+		269FEDA6209B6D95004FA261 /* CustomTransitioningAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 269FEDA5209B6D94004FA261 /* CustomTransitioningAnimator.swift */; };
+		269FEDA8209B6E96004FA261 /* CustomRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 269FEDA7209B6E96004FA261 /* CustomRouter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -214,6 +216,8 @@
 		269FED9E209B447F004FA261 /* CoreNetworkStack.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = CoreNetworkStack.framework; sourceTree = "<group>"; };
 		269FEDA1209B4C6B004FA261 /* MyBoard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MyBoard.storyboard; sourceTree = "<group>"; };
 		269FEDA3209B4CDD004FA261 /* TestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestViewController.swift; sourceTree = "<group>"; };
+		269FEDA5209B6D94004FA261 /* CustomTransitioningAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTransitioningAnimator.swift; sourceTree = "<group>"; };
+		269FEDA7209B6E96004FA261 /* CustomRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomRouter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -284,6 +288,7 @@
 		26806F60209978070089292C /* iOSAppKitExample */ = {
 			isa = PBXGroup;
 			children = (
+				269FEDA9209B6F32004FA261 /* CustomRouter */,
 				26806F61209978070089292C /* AppDelegate.swift */,
 				26806F63209978070089292C /* ViewController.swift */,
 				26806F65209978070089292C /* Main.storyboard */,
@@ -523,6 +528,15 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		269FEDA9209B6F32004FA261 /* CustomRouter */ = {
+			isa = PBXGroup;
+			children = (
+				269FEDA5209B6D94004FA261 /* CustomTransitioningAnimator.swift */,
+				269FEDA7209B6E96004FA261 /* CustomRouter.swift */,
+			);
+			path = CustomRouter;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -727,6 +741,8 @@
 				26806F64209978070089292C /* ViewController.swift in Sources */,
 				269FEDA4209B4CDD004FA261 /* TestViewController.swift in Sources */,
 				26806F62209978070089292C /* AppDelegate.swift in Sources */,
+				269FEDA6209B6D95004FA261 /* CustomTransitioningAnimator.swift in Sources */,
+				269FEDA8209B6E96004FA261 /* CustomRouter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1041,7 +1057,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.swift.NGAppKit;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -1071,7 +1087,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.swift.NGAppKit;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 3.0;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";

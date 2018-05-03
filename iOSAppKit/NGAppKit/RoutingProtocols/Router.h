@@ -18,4 +18,5 @@
 
 @interface Router : NSObject <RouterProtocol>
 - (instancetype) initWithNext:(id<RouterProtocol>)next;
+- (UIViewController*) createRouteToViewController:(RouteTo*)info;
 @end

@@ -43,15 +43,30 @@ NSString* const kRouteCount = @"RouteCountKey";
     return info;
 }
 
+- (UIViewController*) createRouteToViewController:(RouteTo*)rInfo{
+    NSAssert(rInfo.storyboard, @"#storyboard must not nil");
+    NSAssert(rInfo.viewControllerID, @"#viewControllerID must not nil");
+    AppStoryboard *board = [AppStoryboard load:rInfo.storyboard];
+    NSString *iPadID = (rInfo.viewControllerIPadID == nil) ? rInfo.viewControllerID : rInfo.viewControllerIPadID;
+    UIViewController *routedVC = (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad) ? [board viewControllerByStoryboardID:iPadID] : [board viewControllerByStoryboardID:rInfo.viewControllerID];
+    return routedVC;
+}
+
 - (void)routeFrom:(UIViewController *)viewController withInfo:(NGObject *)info{
     if ([info isKindOfClass:[RouteTo class]]) {
-        RouteTo *rInfo = (RouteTo*)info;
-        NSAssert(rInfo.storyboard, @"#storyboard must not nil");
-        NSAssert(rInfo.viewControllerID, @"#viewControllerID must not nil");
-        AppStoryboard *board = [AppStoryboard load:rInfo.storyboard];
-        NSString *iPadID = (rInfo.viewControllerIPadID == nil) ? rInfo.viewControllerID : rInfo.viewControllerIPadID;
-        UIViewController *routedVC = (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad) ? [board viewControllerByStoryboardID:iPadID] : [board viewControllerByStoryboardID:rInfo.viewControllerID];
+        UIViewController *routedVC = [self createRouteToViewController:(RouteTo*)info];
         [viewController showViewController:routedVC sender:nil];
+    }
+}
+
+- (void)routeFrom:(UIViewController *)viewController withInfo:(NGObject *)info animated:(BOOL)animate onCompletion:(void (^)(void))completion{
+    if ([info isKindOfClass:[RouteTo class]]) {
+        if (completion) {
+            UIViewController *routedVC = [self createRouteToViewController:(RouteTo*)info];
+            [viewController presentViewController:routedVC animated:animate completion:completion];
+        }else{
+            [self routeFrom:viewController withInfo:info];
+        }
     }
 }
 

@@ -33,7 +33,7 @@ open class SecureFile: File {
             var decryptor: RNDecryptor? = nil
             var totalWritenLength: Int = 0
             
-            let readStreamBlock: ()->() = { (Void) -> Void in
+            let readStreamBlock: ()->() = { () -> Void in
                 
                 let buffer = data.withUnsafeMutableBytes({ (ptr:UnsafeMutablePointer<UInt8>) -> UnsafeMutablePointer<UInt8> in
                     return ptr
@@ -104,7 +104,7 @@ open class SecureFile: File {
             var totalWritenLength: Int = 0
             let readFileTotalBytes = self.sizeInBytes
             
-            let readStreamBlock: ()->() = { (Void) -> Void in
+            let readStreamBlock: ()->() = { () -> Void in
                 
                 let buffer = data.withUnsafeMutableBytes({ (ptr: UnsafeMutablePointer<UInt8>) -> UnsafeMutablePointer<UInt8> in
                     return ptr
@@ -180,7 +180,7 @@ open class SecureFile: File {
             var totalWritenLength: Int = 0
             let readFileTotalBytes = readfile.sizeInBytes
             
-            let readStreamBlock: ()->() = { (Void) -> Void in
+            let readStreamBlock: ()->() = { () -> Void in
                 
                 let buffer = data.withUnsafeMutableBytes({ (ptr: UnsafeMutablePointer<UInt8>) -> UnsafeMutablePointer<UInt8> in
                     return ptr
