@@ -28,11 +28,6 @@
     return nil;
 }
 
-- (NSString *)defaultStoryboardName{
-    NSString *storyboardName = [[NSBundle mainBundle] infoDictionary][[self keyMapper:MainStoryboardName]];
-    return storyboardName;
-}
-
 - (NSString*) keyMapper:(AppInfoKeys)key{
     NSString *result = @"";
     switch (key) {

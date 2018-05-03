@@ -81,9 +81,8 @@
                         NSLog(@"Save Successfull %@",saveName);
                 }
             }
-        }else{
-            _dTask = nil;
         }
+        _dTask = nil;
         dispatch_async(queue, ^{
             if(handler) handler(_contentImage);
         });

@@ -10,7 +10,7 @@
 #import <CoreDataStack/NGObject.h>
 #import "RouterProtocol.h"
 
-@interface RouterInfo: NGObject
+@interface RouteTo: NGObject
 @property (nonatomic, copy) NSString *storyboard;
 @property (nonatomic, copy) NSString *viewControllerID;
 @property (nonatomic, copy) NSString *viewControllerIPadID;

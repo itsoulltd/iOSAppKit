@@ -43,11 +43,14 @@ NSString* const kRouteCount = @"RouteCountKey";
     return info;
 }
 
-- (void)routingViewController:(UIViewController *)viewController withInfo:(NGObject *)info{
-    if ([info isKindOfClass:[RouterInfo class]]) {
-        RouterInfo *rInfo = (RouterInfo*)info;
+- (void)routeFrom:(UIViewController *)viewController withInfo:(NGObject *)info{
+    if ([info isKindOfClass:[RouteTo class]]) {
+        RouteTo *rInfo = (RouteTo*)info;
+        NSAssert(rInfo.storyboard, @"#storyboard must not nil");
+        NSAssert(rInfo.viewControllerID, @"#viewControllerID must not nil");
         AppStoryboard *board = [AppStoryboard load:rInfo.storyboard];
-        UIViewController *routedVC = (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad) ? [board viewControllerByStoryboardID:rInfo.viewControllerIPadID] : [board viewControllerByStoryboardID:rInfo.viewControllerID];
+        NSString *iPadID = (rInfo.viewControllerIPadID == nil) ? rInfo.viewControllerID : rInfo.viewControllerIPadID;
+        UIViewController *routedVC = (UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiomPad) ? [board viewControllerByStoryboardID:iPadID] : [board viewControllerByStoryboardID:rInfo.viewControllerID];
         [viewController showViewController:routedVC sender:nil];
     }
 }
@@ -66,5 +69,5 @@ NSString* const kRouteCount = @"RouteCountKey";
 
 @end
 
-@implementation RouterInfo
+@implementation RouteTo
 @end

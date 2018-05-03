@@ -6,26 +6,26 @@
 //  Copyright © 2017 Towhid Islam. All rights reserved.
 //
 
-#import "AsynchImagePrefetcher.h"
+#import "ImagePrefetcher.h"
 #import "QueueManager.h"
 
 @interface ImgOperation: AsynchOperation
 @property (nonatomic, strong) AsynchImage* img;
 @end
 
-@interface AsynchImagePrefetcher ()
+@interface ImagePrefetcher ()
 @property (nonatomic, copy) AsynchPrefetchOnCompletion completionHandler;
 @property (nonatomic, strong) QueueManager *qManager;
 @property (nonatomic, strong) NSString *identifier;
 @end
 
-@implementation AsynchImagePrefetcher
+@implementation ImagePrefetcher
 
 + (instancetype)shared{
-    static AsynchImagePrefetcher *_shared = nil;
+    static ImagePrefetcher *_shared = nil;
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
-        _shared = [AsynchImagePrefetcher new];
+        _shared = [ImagePrefetcher new];
     });
     return _shared;
 }

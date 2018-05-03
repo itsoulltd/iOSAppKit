@@ -10,6 +10,8 @@
 #import "AppInfo.h"
 
 @interface AppStoryboard ()
+@property (nonatomic, weak) UIApplication *application;
+@property (nonatomic, weak) NSBundle *mainBundle;
 @property (nonatomic, strong) UIStoryboard *internalStoryboard;
 @property (nonatomic, strong) NSMutableDictionary<NSString *, UIStoryboard *> *storyboardContainer;
 @end
@@ -23,32 +25,16 @@
         inner = [AppStoryboard new];
         inner.storyboardContainer = [NSMutableDictionary new];
     });
-    if (name == nil) {
-        name = [[AppInfo new] defaultStoryboardName];
+    if (name == nil && inner.mainBundle != nil) {
+        name = [inner.mainBundle infoDictionary][[[AppInfo new] stringValueForKey:MainStoryboardName]];
+    }
+    if (name == nil){
+        return inner;
     }
     UIStoryboard *board = (UIStoryboard*)[inner storyboardContainer][name];
     if (board == nil) {
-        board = [UIStoryboard storyboardWithName:name bundle:[NSBundle bundleForClass:[AppStoryboard class]]];
+        board = [UIStoryboard storyboardWithName:name bundle:inner.mainBundle];
         [inner storyboardContainer][name] = board;
-    }
-    inner.internalStoryboard = board;
-    return inner;
-}
-
-+ (instancetype)create:(NSString *)name{
-    static NSMutableDictionary<NSString *, UIStoryboard *> *innerContainer = nil;
-    static dispatch_once_t onceToken;
-    dispatch_once(&onceToken, ^{
-        innerContainer = [NSMutableDictionary new];
-    });
-    AppStoryboard *inner = [AppStoryboard new];
-    if (name == nil) {
-        name = [[AppInfo new] defaultStoryboardName];
-    }
-    UIStoryboard *board = (UIStoryboard*)innerContainer[name];
-    if (board == nil) {
-        board = [UIStoryboard storyboardWithName:name bundle:[NSBundle bundleForClass:[AppStoryboard class]]];
-        innerContainer[name] = board;
     }
     inner.internalStoryboard = board;
     return inner;
@@ -59,22 +45,42 @@
     return initial;
 }
 
+- (NSString*) resolveClassName:(Class)type{
+    NSString *fullName = NSStringFromClass(type);
+    NSString *moduleName = [[AppInfo new] stringValueForKey:BundleName];
+    NSString *moduleWithSeparetor = [NSString stringWithFormat:@"%@.",moduleName];
+    NSString *className = [fullName stringByReplacingOccurrencesOfString:moduleWithSeparetor withString:@""];
+    return className;
+}
+
 - (UIViewController *)viewControllerByType:(Class)type{
-    return [self viewControllerByStoryboardID:NSStringFromClass(type)];
+    return [self viewControllerByStoryboardID:[self resolveClassName:type]];
 }
 
 - (UIViewController *)viewControllerByStoryboardID:(NSString *)storyboardID{
     return [[self internalStoryboard] instantiateViewControllerWithIdentifier:storyboardID];
 }
 
++ (void)configureApplication:(UIApplication *)app mainBundle:(NSBundle*)main{
+    [AppStoryboard load:nil].application = app;
+    [AppStoryboard load:nil].mainBundle = main;
+}
+
 + (UIViewController *)visibleViewController{
-    UIViewController *rootViewController = [UIApplication.sharedApplication.keyWindow rootViewController];
+    if ([AppStoryboard load:nil].application == nil) return nil;
+    UIViewController *rootViewController = [[AppStoryboard load:nil].application.keyWindow rootViewController];
     if ([rootViewController isKindOfClass:[UINavigationController class]]) {
         return [(UINavigationController*)rootViewController visibleViewController];
     }else if ([rootViewController isKindOfClass:[UITabBarController class]]){
         return [(UITabBarController*)rootViewController selectedViewController];
     }
     return rootViewController;
+}
+
++ (void) showModalViewController:(UIViewController*)viewController onCompletion:(void (^)(void))block{
+    UIViewController *visible = [AppStoryboard visibleViewController];
+    viewController.modalPresentationStyle = UIModalPresentationCurrentContext;
+    [visible presentViewController:viewController animated:YES completion:block];
 }
 
 + (void) showViewController:(UIViewController*)viewController sender:(id)sender{
@@ -87,17 +93,6 @@
         }else{
             [self showModalViewController:viewController onCompletion:nil];
         }
-    }
-}
-
-+ (void) pushToLast:(UIViewController*)viewController sender:(id)sender{
-    UIViewController *visible = [AppStoryboard visibleViewController];
-    if ([visible isKindOfClass:[UINavigationController class]]) {
-        UINavigationController *nav = (UINavigationController*)visible;
-        NSMutableArray *viewsControllers = [[NSMutableArray alloc] initWithArray:nav.viewControllers];
-        [viewsControllers removeLastObject];
-        [viewsControllers addObject:viewController];
-        [nav setViewControllers:viewsControllers animated:YES];
     }
 }
 
@@ -116,10 +111,8 @@
     }
 }
 
-+ (void) showModalViewController:(UIViewController*)viewController onCompletion:(void (^)(void))block{
-    UIViewController *visible = [AppStoryboard visibleViewController];
-    viewController.modalPresentationStyle = UIModalPresentationCurrentContext;
-    [visible presentViewController:viewController animated:YES completion:block];
++ (void) pushToLast:(UIViewController*)viewController sender:(id)sender{
+    [AppStoryboard pushToLast:viewController replacing:1 sender:sender];
 }
 
 @end

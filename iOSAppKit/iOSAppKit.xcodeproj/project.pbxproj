@@ -52,8 +52,8 @@
 		2680700D20999A260089292C /* QueueManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 26806FCD20999A240089292C /* QueueManager.m */; };
 		2680701220999A260089292C /* AsynchImage.h in Headers */ = {isa = PBXBuildFile; fileRef = 26806FD420999A240089292C /* AsynchImage.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2680701320999A260089292C /* AsynchImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 26806FD520999A240089292C /* AsynchImage.m */; };
-		2680701420999A260089292C /* AsynchImagePrefetcher.h in Headers */ = {isa = PBXBuildFile; fileRef = 26806FD620999A240089292C /* AsynchImagePrefetcher.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		2680701520999A260089292C /* AsynchImagePrefetcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 26806FD720999A240089292C /* AsynchImagePrefetcher.m */; };
+		2680701420999A260089292C /* ImagePrefetcher.h in Headers */ = {isa = PBXBuildFile; fileRef = 26806FD620999A240089292C /* ImagePrefetcher.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		2680701520999A260089292C /* ImagePrefetcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 26806FD720999A240089292C /* ImagePrefetcher.m */; };
 		2680701820999A260089292C /* Credential.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26806FDD20999A250089292C /* Credential.swift */; };
 		2680701920999A260089292C /* OAuth.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26806FDE20999A250089292C /* OAuth.swift */; };
 		2680701A20999A260089292C /* PassCode.h in Headers */ = {isa = PBXBuildFile; fileRef = 26806FE020999A250089292C /* PassCode.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -81,6 +81,10 @@
 		2680703C2099B33A0089292C /* FileSystemSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2680703B2099B33A0089292C /* FileSystemSDK.framework */; };
 		2680703D2099B33A0089292C /* FileSystemSDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2680703B2099B33A0089292C /* FileSystemSDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		2680703E2099B3440089292C /* FileSystemSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2680703B2099B33A0089292C /* FileSystemSDK.framework */; };
+		269FED9F209B447F004FA261 /* CoreNetworkStack.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 269FED9E209B447F004FA261 /* CoreNetworkStack.framework */; };
+		269FEDA0209B447F004FA261 /* CoreNetworkStack.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 269FED9E209B447F004FA261 /* CoreNetworkStack.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		269FEDA2209B4C6B004FA261 /* MyBoard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 269FEDA1209B4C6B004FA261 /* MyBoard.storyboard */; };
+		269FEDA4209B4CDD004FA261 /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 269FEDA3209B4CDD004FA261 /* TestViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -124,6 +128,7 @@
 				268070382099B2600089292C /* CoreDataStack.framework in Embed Frameworks */,
 				2680703D2099B33A0089292C /* FileSystemSDK.framework in Embed Frameworks */,
 				26806F9C2099994C0089292C /* NGAppKit.framework in Embed Frameworks */,
+				269FEDA0209B447F004FA261 /* CoreNetworkStack.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -181,8 +186,8 @@
 		26806FCD20999A240089292C /* QueueManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QueueManager.m; sourceTree = "<group>"; };
 		26806FD420999A240089292C /* AsynchImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AsynchImage.h; sourceTree = "<group>"; };
 		26806FD520999A240089292C /* AsynchImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AsynchImage.m; sourceTree = "<group>"; };
-		26806FD620999A240089292C /* AsynchImagePrefetcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AsynchImagePrefetcher.h; sourceTree = "<group>"; };
-		26806FD720999A240089292C /* AsynchImagePrefetcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AsynchImagePrefetcher.m; sourceTree = "<group>"; };
+		26806FD620999A240089292C /* ImagePrefetcher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImagePrefetcher.h; sourceTree = "<group>"; };
+		26806FD720999A240089292C /* ImagePrefetcher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImagePrefetcher.m; sourceTree = "<group>"; };
 		26806FDD20999A250089292C /* Credential.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Credential.swift; sourceTree = "<group>"; };
 		26806FDE20999A250089292C /* OAuth.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OAuth.swift; sourceTree = "<group>"; };
 		26806FE020999A250089292C /* PassCode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PassCode.h; sourceTree = "<group>"; };
@@ -206,6 +211,9 @@
 		2680702E20999BEC0089292C /* AppStoryboard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppStoryboard.m; sourceTree = "<group>"; };
 		268070362099B2600089292C /* CoreDataStack.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = CoreDataStack.framework; sourceTree = "<group>"; };
 		2680703B2099B33A0089292C /* FileSystemSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FileSystemSDK.framework; sourceTree = "<group>"; };
+		269FED9E209B447F004FA261 /* CoreNetworkStack.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = CoreNetworkStack.framework; sourceTree = "<group>"; };
+		269FEDA1209B4C6B004FA261 /* MyBoard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MyBoard.storyboard; sourceTree = "<group>"; };
+		269FEDA3209B4CDD004FA261 /* TestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -216,6 +224,7 @@
 				268070372099B2600089292C /* CoreDataStack.framework in Frameworks */,
 				2680703C2099B33A0089292C /* FileSystemSDK.framework in Frameworks */,
 				26806F9B2099994C0089292C /* NGAppKit.framework in Frameworks */,
+				269FED9F209B447F004FA261 /* CoreNetworkStack.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -249,6 +258,7 @@
 		26806F55209978070089292C = {
 			isa = PBXGroup;
 			children = (
+				269FED9E209B447F004FA261 /* CoreNetworkStack.framework */,
 				2680703B2099B33A0089292C /* FileSystemSDK.framework */,
 				268070362099B2600089292C /* CoreDataStack.framework */,
 				26806F60209978070089292C /* iOSAppKitExample */,
@@ -280,6 +290,8 @@
 				26806F68209978070089292C /* Assets.xcassets */,
 				26806F6A209978070089292C /* LaunchScreen.storyboard */,
 				26806F6D209978080089292C /* Info.plist */,
+				269FEDA1209B4C6B004FA261 /* MyBoard.storyboard */,
+				269FEDA3209B4CDD004FA261 /* TestViewController.swift */,
 			);
 			path = iOSAppKitExample;
 			sourceTree = "<group>";
@@ -426,8 +438,8 @@
 			children = (
 				26806FD420999A240089292C /* AsynchImage.h */,
 				26806FD520999A240089292C /* AsynchImage.m */,
-				26806FD620999A240089292C /* AsynchImagePrefetcher.h */,
-				26806FD720999A240089292C /* AsynchImagePrefetcher.m */,
+				26806FD620999A240089292C /* ImagePrefetcher.h */,
+				26806FD720999A240089292C /* ImagePrefetcher.m */,
 			);
 			path = AsynchImage;
 			sourceTree = "<group>";
@@ -519,7 +531,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				26806FF520999A250089292C /* RNDecryptor.h in Headers */,
-				2680701420999A260089292C /* AsynchImagePrefetcher.h in Headers */,
+				2680701420999A260089292C /* ImagePrefetcher.h in Headers */,
 				26806FF720999A250089292C /* RNEncryptor.h in Headers */,
 				2680700B20999A260089292C /* OperationProtocol.h in Headers */,
 				2680700C20999A260089292C /* QueueManager.h in Headers */,
@@ -680,6 +692,7 @@
 				26806F6C209978070089292C /* LaunchScreen.storyboard in Resources */,
 				26806F69209978070089292C /* Assets.xcassets in Resources */,
 				26806F67209978070089292C /* Main.storyboard in Resources */,
+				269FEDA2209B4C6B004FA261 /* MyBoard.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -712,6 +725,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				26806F64209978070089292C /* ViewController.swift in Sources */,
+				269FEDA4209B4CDD004FA261 /* TestViewController.swift in Sources */,
 				26806F62209978070089292C /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -733,7 +747,7 @@
 				2680701B20999A260089292C /* PassCode.m in Sources */,
 				26806FF220999A250089292C /* RNCryptor.m in Sources */,
 				2680701F20999A260089292C /* AlphabeticalSort.swift in Sources */,
-				2680701520999A260089292C /* AsynchImagePrefetcher.m in Sources */,
+				2680701520999A260089292C /* ImagePrefetcher.m in Sources */,
 				26806FF620999A250089292C /* RNDecryptor.m in Sources */,
 				2680700820999A260089292C /* AsynchOperation.m in Sources */,
 				2680701320999A260089292C /* AsynchImage.m in Sources */,
@@ -939,7 +953,7 @@
 					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = iOSAppKitExample/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.swift.iOSAppKit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -961,7 +975,7 @@
 					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = iOSAppKitExample/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.swift.iOSAppKit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1022,6 +1036,7 @@
 				);
 				INFOPLIST_FILE = NGAppKit/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.swift.NGAppKit;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
@@ -1051,6 +1066,7 @@
 				);
 				INFOPLIST_FILE = NGAppKit/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.swift.NGAppKit;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";

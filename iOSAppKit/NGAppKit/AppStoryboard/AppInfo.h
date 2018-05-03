@@ -21,6 +21,5 @@ typedef NS_ENUM(NSInteger, AppInfoKeys) {
 
 - (NSString*) stringValueForKey:(AppInfoKeys)key;
 - (NSNumber*) numberValueForKey:(AppInfoKeys)key;
-- (NSString*) defaultStoryboardName;
 
 @end

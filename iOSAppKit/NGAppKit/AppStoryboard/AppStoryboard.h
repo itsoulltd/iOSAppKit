@@ -11,15 +11,17 @@
 
 @interface AppStoryboard : NSObject
 
-+ (instancetype) create:(NSString *)name;
-
 + (instancetype) load:(NSString*)name;
+
+- (NSString*) resolveClassName:(Class)type;
 
 - (UIViewController*) initialViewController;
 
 - (UIViewController*) viewControllerByType:(Class)type;
 
 - (UIViewController*) viewControllerByStoryboardID:(NSString*)storyboardID;
+
++ (void)configureApplication:(UIApplication *)app mainBundle:(NSBundle*)main;
 
 + (UIViewController*) visibleViewController;
 

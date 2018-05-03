@@ -11,7 +11,7 @@
 
 typedef void(^AsynchPrefetchOnCompletion)(BOOL complete);
 
-@interface AsynchImagePrefetcher : NSObject
+@interface ImagePrefetcher : NSObject
 + (instancetype) shared;
 - (void) prefetch:(NSArray<AsynchImage*>*)itemsToPrefetch onCompletion:(AsynchPrefetchOnCompletion)handler;
 @end
