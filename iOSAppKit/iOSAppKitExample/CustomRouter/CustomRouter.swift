@@ -11,13 +11,13 @@ import NGAppKit
 
 class CustomRouter: Router {
     
-    override func createRoute(toViewController info: RouteTo!) -> UIViewController! {
+    override func createRoute(toViewController info: RouteTo) -> UIViewController {
         let routed = super.createRoute(toViewController: info)
-        routed?.transitioningDelegate = self
+        routed.transitioningDelegate = self
         return routed
     }
     
-    override func route(from viewController: UIViewController, withInfo info: NGObject?) {
+    override func route(from viewController: UIViewController?, withInfo info: NGObject?) {
         guard let info = info else{
             super.route(from: viewController, withInfo: nil)
             return

@@ -42,7 +42,7 @@ class ViewController: UIViewController {
                     self.timer = nil
                     self.counter = 0
                     //Router
-                    guard let story = AppStoryboard.load("MyBoard") else {return}
+                    guard (AppStoryboard.load("MyBoard")) != nil else {return}
                     if let info = RouteTo(info: ["storyboard":"MyBoard"]){
                         info.viewControllerID = AppStoryboard.resolveClassName(TestViewController.self)
                         self.router.route(from: self, withInfo: info)
