@@ -3,7 +3,7 @@
 //  StartupProjectSampleA
 //
 //  Created by Towhid on 10/7/15.
-//  Copyright © 2015 Towhid (Selise.ch). All rights reserved.
+//  Copyright © 2018 ITSoulLab(http://itsoullab.com). All rights reserved.
 //
 
 import Foundation
