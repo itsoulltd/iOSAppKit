@@ -67,7 +67,6 @@
 		2680702220999A260089292C /* SortCommand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26806FE920999A250089292C /* SortCommand.swift */; };
 		2680702320999A260089292C /* RNCryptorHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = 26806FEB20999A250089292C /* RNCryptorHelper.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2680702420999A260089292C /* RNCryptorHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 26806FEC20999A250089292C /* RNCryptorHelper.m */; };
-		2680702520999A260089292C /* SecureFile.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26806FED20999A250089292C /* SecureFile.swift */; };
 		2680702F20999BEC0089292C /* Router.h in Headers */ = {isa = PBXBuildFile; fileRef = 2680702720999BEC0089292C /* Router.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2680703020999BEC0089292C /* Router.m in Sources */ = {isa = PBXBuildFile; fileRef = 2680702820999BEC0089292C /* Router.m */; };
 		2680703120999BEC0089292C /* RouterProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 2680702920999BEC0089292C /* RouterProtocol.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -87,6 +86,8 @@
 		269FEDA4209B4CDD004FA261 /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 269FEDA3209B4CDD004FA261 /* TestViewController.swift */; };
 		269FEDA6209B6D95004FA261 /* CustomTransitioningAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 269FEDA5209B6D94004FA261 /* CustomTransitioningAnimator.swift */; };
 		269FEDA8209B6E96004FA261 /* CustomRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 269FEDA7209B6E96004FA261 /* CustomRouter.swift */; };
+		26BF226B20DCCB83001DAE93 /* CryptoFile.m in Sources */ = {isa = PBXBuildFile; fileRef = 26BF226920DCCB83001DAE93 /* CryptoFile.m */; };
+		26BF226C20DCCB83001DAE93 /* CryptoFile.h in Headers */ = {isa = PBXBuildFile; fileRef = 26BF226A20DCCB83001DAE93 /* CryptoFile.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -203,7 +204,6 @@
 		26806FE920999A250089292C /* SortCommand.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SortCommand.swift; sourceTree = "<group>"; };
 		26806FEB20999A250089292C /* RNCryptorHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RNCryptorHelper.h; sourceTree = "<group>"; };
 		26806FEC20999A250089292C /* RNCryptorHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RNCryptorHelper.m; sourceTree = "<group>"; };
-		26806FED20999A250089292C /* SecureFile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecureFile.swift; sourceTree = "<group>"; };
 		2680702720999BEC0089292C /* Router.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Router.h; sourceTree = "<group>"; };
 		2680702820999BEC0089292C /* Router.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Router.m; sourceTree = "<group>"; };
 		2680702920999BEC0089292C /* RouterProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RouterProtocol.h; sourceTree = "<group>"; };
@@ -218,6 +218,8 @@
 		269FEDA3209B4CDD004FA261 /* TestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestViewController.swift; sourceTree = "<group>"; };
 		269FEDA5209B6D94004FA261 /* CustomTransitioningAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTransitioningAnimator.swift; sourceTree = "<group>"; };
 		269FEDA7209B6E96004FA261 /* CustomRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomRouter.swift; sourceTree = "<group>"; };
+		26BF226920DCCB83001DAE93 /* CryptoFile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CryptoFile.m; sourceTree = "<group>"; };
+		26BF226A20DCCB83001DAE93 /* CryptoFile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CryptoFile.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -493,9 +495,10 @@
 		26806FEA20999A250089292C /* SecureFile */ = {
 			isa = PBXGroup;
 			children = (
+				26BF226A20DCCB83001DAE93 /* CryptoFile.h */,
+				26BF226920DCCB83001DAE93 /* CryptoFile.m */,
 				26806FEB20999A250089292C /* RNCryptorHelper.h */,
 				26806FEC20999A250089292C /* RNCryptorHelper.m */,
-				26806FED20999A250089292C /* SecureFile.swift */,
 			);
 			path = SecureFile;
 			sourceTree = "<group>";
@@ -545,6 +548,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				26806FF520999A250089292C /* RNDecryptor.h in Headers */,
+				26BF226C20DCCB83001DAE93 /* CryptoFile.h in Headers */,
 				2680701420999A260089292C /* ImagePrefetcher.h in Headers */,
 				26806FF720999A250089292C /* RNEncryptor.h in Headers */,
 				2680700B20999A260089292C /* OperationProtocol.h in Headers */,
@@ -758,7 +762,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2680702520999A260089292C /* SecureFile.swift in Sources */,
 				2680700120999A260089292C /* ResolutionStrategy.swift in Sources */,
 				2680701B20999A260089292C /* PassCode.m in Sources */,
 				26806FF220999A250089292C /* RNCryptor.m in Sources */,
@@ -768,6 +771,7 @@
 				2680700820999A260089292C /* AsynchOperation.m in Sources */,
 				2680701320999A260089292C /* AsynchImage.m in Sources */,
 				2680700020999A260089292C /* NGRuleSystem.swift in Sources */,
+				26BF226B20DCCB83001DAE93 /* CryptoFile.m in Sources */,
 				2680701E20999A260089292C /* UserManagement.swift in Sources */,
 				2680701820999A260089292C /* Credential.swift in Sources */,
 				2680702420999A260089292C /* RNCryptorHelper.m in Sources */,
