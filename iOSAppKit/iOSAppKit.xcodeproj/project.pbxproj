@@ -86,8 +86,6 @@
 		269FEDA4209B4CDD004FA261 /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 269FEDA3209B4CDD004FA261 /* TestViewController.swift */; };
 		269FEDA6209B6D95004FA261 /* CustomTransitioningAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 269FEDA5209B6D94004FA261 /* CustomTransitioningAnimator.swift */; };
 		269FEDA8209B6E96004FA261 /* CustomRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 269FEDA7209B6E96004FA261 /* CustomRouter.swift */; };
-		26BF226B20DCCB83001DAE93 /* CryptoFile.m in Sources */ = {isa = PBXBuildFile; fileRef = 26BF226920DCCB83001DAE93 /* CryptoFile.m */; };
-		26BF226C20DCCB83001DAE93 /* CryptoFile.h in Headers */ = {isa = PBXBuildFile; fileRef = 26BF226A20DCCB83001DAE93 /* CryptoFile.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -218,8 +216,6 @@
 		269FEDA3209B4CDD004FA261 /* TestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestViewController.swift; sourceTree = "<group>"; };
 		269FEDA5209B6D94004FA261 /* CustomTransitioningAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTransitioningAnimator.swift; sourceTree = "<group>"; };
 		269FEDA7209B6E96004FA261 /* CustomRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomRouter.swift; sourceTree = "<group>"; };
-		26BF226920DCCB83001DAE93 /* CryptoFile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CryptoFile.m; sourceTree = "<group>"; };
-		26BF226A20DCCB83001DAE93 /* CryptoFile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CryptoFile.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -495,8 +491,6 @@
 		26806FEA20999A250089292C /* SecureFile */ = {
 			isa = PBXGroup;
 			children = (
-				26BF226A20DCCB83001DAE93 /* CryptoFile.h */,
-				26BF226920DCCB83001DAE93 /* CryptoFile.m */,
 				26806FEB20999A250089292C /* RNCryptorHelper.h */,
 				26806FEC20999A250089292C /* RNCryptorHelper.m */,
 			);
@@ -548,7 +542,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				26806FF520999A250089292C /* RNDecryptor.h in Headers */,
-				26BF226C20DCCB83001DAE93 /* CryptoFile.h in Headers */,
 				2680701420999A260089292C /* ImagePrefetcher.h in Headers */,
 				26806FF720999A250089292C /* RNEncryptor.h in Headers */,
 				2680700B20999A260089292C /* OperationProtocol.h in Headers */,
@@ -771,7 +764,6 @@
 				2680700820999A260089292C /* AsynchOperation.m in Sources */,
 				2680701320999A260089292C /* AsynchImage.m in Sources */,
 				2680700020999A260089292C /* NGRuleSystem.swift in Sources */,
-				26BF226B20DCCB83001DAE93 /* CryptoFile.m in Sources */,
 				2680701E20999A260089292C /* UserManagement.swift in Sources */,
 				2680701820999A260089292C /* Credential.swift in Sources */,
 				2680702420999A260089292C /* RNCryptorHelper.m in Sources */,

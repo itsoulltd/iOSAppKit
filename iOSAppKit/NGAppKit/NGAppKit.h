@@ -32,6 +32,5 @@ FOUNDATION_EXPORT const unsigned char NGAppKitVersionString[];
 #import <NGAppKit/ImagePrefetcher.h>
 #import <NGAppKit/Router.h>
 #import <NGAppKit/RouterProtocol.h>
-#import <NGAppKit/CryptoFile.h>
 
 
