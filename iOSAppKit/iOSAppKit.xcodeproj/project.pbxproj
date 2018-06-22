@@ -86,6 +86,7 @@
 		269FEDA4209B4CDD004FA261 /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 269FEDA3209B4CDD004FA261 /* TestViewController.swift */; };
 		269FEDA6209B6D95004FA261 /* CustomTransitioningAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 269FEDA5209B6D94004FA261 /* CustomTransitioningAnimator.swift */; };
 		269FEDA8209B6E96004FA261 /* CustomRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 269FEDA7209B6E96004FA261 /* CustomRouter.swift */; };
+		26BF229120DCE192001DAE93 /* books.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 26BF229020DCE192001DAE93 /* books.pdf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -216,6 +217,7 @@
 		269FEDA3209B4CDD004FA261 /* TestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestViewController.swift; sourceTree = "<group>"; };
 		269FEDA5209B6D94004FA261 /* CustomTransitioningAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTransitioningAnimator.swift; sourceTree = "<group>"; };
 		269FEDA7209B6E96004FA261 /* CustomRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomRouter.swift; sourceTree = "<group>"; };
+		26BF229020DCE192001DAE93 /* books.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = books.pdf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -286,6 +288,7 @@
 		26806F60209978070089292C /* iOSAppKitExample */ = {
 			isa = PBXGroup;
 			children = (
+				26BF228F20DCE175001DAE93 /* Resources */,
 				269FEDA9209B6F32004FA261 /* CustomRouter */,
 				26806F61209978070089292C /* AppDelegate.swift */,
 				26806F63209978070089292C /* ViewController.swift */,
@@ -534,6 +537,14 @@
 			path = CustomRouter;
 			sourceTree = "<group>";
 		};
+		26BF228F20DCE175001DAE93 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				26BF229020DCE192001DAE93 /* books.pdf */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -702,6 +713,7 @@
 			files = (
 				26806F6C209978070089292C /* LaunchScreen.storyboard in Resources */,
 				26806F69209978070089292C /* Assets.xcassets in Resources */,
+				26BF229120DCE192001DAE93 /* books.pdf in Resources */,
 				26806F67209978070089292C /* Main.storyboard in Resources */,
 				269FEDA2209B4C6B004FA261 /* MyBoard.storyboard in Resources */,
 			);

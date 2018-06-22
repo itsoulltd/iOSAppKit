@@ -8,6 +8,7 @@
 
 import UIKit
 import NGAppKit
+import FileSystemSDK
 
 class ViewController: UIViewController {
 
@@ -57,6 +58,25 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    private var cryptoFile: CryptoFile?
+    private func testCryptoFile(){
+        let docFolder = Folder(name: "CryptoBooks", searchDirectoryType: FileManager.SearchPathDirectory.documentDirectory)
+        let writePath = (docFolder.path())?.appendingPathComponent("crypto.file")
+        
+        let readUrl = Bundle.main.url(forResource: "books", withExtension: "pdf")
+        let readFile = File(url: readUrl!)
+        
+        cryptoFile = CryptoFile(url: URL(fileURLWithPath: writePath!))
+        cryptoFile?.encrypt(from: readFile, bufferSize: 2048, password: "123456", progress: self, completionHandler: { (done) in
+            print("Successfull \(done)")
+        })
+    }
 
+}
+
+extension ViewController : IFileProgress{
+    func readWriteProgress(_ progress: Double) {
+        print("progress \(progress)")
+    }
 }
 
