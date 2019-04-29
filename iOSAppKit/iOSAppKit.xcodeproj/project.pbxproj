@@ -6,6 +6,20 @@
 	objectVersion = 48;
 	objects = {
 
+/* Begin PBXAggregateTarget section */
+		8F6DC6F922776DDC0064BD80 /* Aggregate */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 8F6DC6FC22776DDC0064BD80 /* Build configuration list for PBXAggregateTarget "Aggregate" */;
+			buildPhases = (
+				8F6DC6FD22776DE30064BD80 /* ShellScript */,
+			);
+			dependencies = (
+			);
+			name = Aggregate;
+			productName = Aggregate;
+		};
+/* End PBXAggregateTarget section */
+
 /* Begin PBXBuildFile section */
 		26806F62209978070089292C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26806F61209978070089292C /* AppDelegate.swift */; };
 		26806F64209978070089292C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26806F63209978070089292C /* ViewController.swift */; };
@@ -683,6 +697,10 @@
 						ProvisioningStyle = Automatic;
 						TestTargetID = 26806F5D209978070089292C;
 					};
+					8F6DC6F922776DDC0064BD80 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
 				};
 			};
 			buildConfigurationList = 26806F59209978070089292C /* Build configuration list for PBXProject "iOSAppKit" */;
@@ -702,6 +720,7 @@
 				26806F71209978080089292C /* iOSAppKitTests */,
 				26806F852099994B0089292C /* NGAppKit */,
 				26806F8D2099994C0089292C /* NGAppKitTests */,
+				8F6DC6F922776DDC0064BD80 /* Aggregate */,
 			);
 		};
 /* End PBXProject section */
@@ -741,6 +760,22 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		8F6DC6FD22776DE30064BD80 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Merge Script\n\n# 1\n# Set bash script to exit immediately if any commands fail.\nset -e\n\n# 2\n# Setup some constants for use later on.\nFRAMEWORK_NAME=\"NGAppKit\"\n\n#Here we create default directory structure on desktop if not exist\nmkdir -p \"${HOME}/Desktop/NextGenBuilds/${FRAMEWORK_NAME}/FatBuild\"\nmkdir -p \"${HOME}/Desktop/NextGenBuilds/${FRAMEWORK_NAME}/Release\"\n\n# 3\n# If remnants from a previous build exist, delete them.\nif [ -d \"${SRCROOT}/build\" ]; then\nrm -rf \"${SRCROOT}/build\"\nfi\n\n# 4\n# Build the framework for device and for simulator (using\n# all needed architectures).\nxcodebuild -target \"${FRAMEWORK_NAME}\" -configuration Debug -arch arm64 -arch armv7 -arch armv7s only_active_arch=no defines_module=yes -sdk \"iphoneos\"\nxcodebuild -target \"${FRAMEWORK_NAME}\" -configuration Debug -arch x86_64 -arch i386 only_active_arch=no defines_module=yes -sdk \"iphonesimulator\"\n\n# 5\n# Remove .framework file if exists on Desktop from previous run.\nif [ -d \"${HOME}/Desktop/NextGenBuilds/${FRAMEWORK_NAME}/FatBuild/${FRAMEWORK_NAME}.framework\" ]; then\nrm -rf \"${HOME}/Desktop/NextGenBuilds/${FRAMEWORK_NAME}/FatBuild/${FRAMEWORK_NAME}.framework\"\nfi\n#Remove release build also\n# Remove .framework file if exists on Desktop from previous run.\nif [ -d \"${HOME}/Desktop/NextGenBuilds/${FRAMEWORK_NAME}/Release/${FRAMEWORK_NAME}.framework\" ]; then\nrm -rf \"${HOME}/Desktop/NextGenBuilds/${FRAMEWORK_NAME}/Release/${FRAMEWORK_NAME}.framework\"\nfi\n\n# 6\n# Copy the device version of framework to Desktop.\ncp -r \"${SRCROOT}/build/Debug-iphoneos/${FRAMEWORK_NAME}.framework\" \"${HOME}/Desktop/NextGenBuilds/${FRAMEWORK_NAME}/Release/${FRAMEWORK_NAME}.framework\"\n\ncp -r \"${SRCROOT}/build/Debug-iphoneos/${FRAMEWORK_NAME}.framework\" \"${HOME}/Desktop/NextGenBuilds/${FRAMEWORK_NAME}/FatBuild/${FRAMEWORK_NAME}.framework\"\n\n# 7\n# Replace the framework executable within the framework with\n# a new version created by merging the device and simulator\n# frameworks' executables with lipo.\nlipo -create -output \"${HOME}/Desktop/NextGenBuilds/${FRAMEWORK_NAME}/FatBuild/${FRAMEWORK_NAME}.framework/${FRAMEWORK_NAME}\" \"${SRCROOT}/build/Debug-iphoneos/${FRAMEWORK_NAME}.framework/${FRAMEWORK_NAME}\" \"${SRCROOT}/build/Debug-iphonesimulator/${FRAMEWORK_NAME}.framework/${FRAMEWORK_NAME}\"\n\n# 8\n# Copy the Swift module mappings for the simulator into the\n# framework.  The device mappings already exist from step 6.\ncp -r \"${SRCROOT}/build/Debug-iphonesimulator/${FRAMEWORK_NAME}.framework/Modules/${FRAMEWORK_NAME}.swiftmodule/\" \"${HOME}/Desktop/NextGenBuilds/${FRAMEWORK_NAME}/FatBuild/${FRAMEWORK_NAME}.framework/Modules/${FRAMEWORK_NAME}.swiftmodule\"\n\n# 9\n# Delete the most recent build.\nif [ -d \"${SRCROOT}/build\" ]; then\nrm -rf \"${SRCROOT}/build\"\nfi";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		26806F5A209978070089292C /* Sources */ = {
@@ -1134,6 +1169,24 @@
 			};
 			name = Release;
 		};
+		8F6DC6FA22776DDC0064BD80 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YS4F7VX5G2;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		8F6DC6FB22776DDC0064BD80 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YS4F7VX5G2;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -1178,6 +1231,15 @@
 			buildConfigurations = (
 				26806FA22099994C0089292C /* Debug */,
 				26806FA32099994C0089292C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8F6DC6FC22776DDC0064BD80 /* Build configuration list for PBXAggregateTarget "Aggregate" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8F6DC6FA22776DDC0064BD80 /* Debug */,
+				8F6DC6FB22776DDC0064BD80 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
