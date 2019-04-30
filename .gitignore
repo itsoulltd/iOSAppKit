@@ -75,6 +75,6 @@ fastlane/test_output
 !*.xcodeproj/xcshareddata/
 !*.xcworkspace/contents.xcworkspacedata
 /*.gcno
-iOSAppKit/*.framework
+iOSAppKit/*.frameworki/*
 
 # End of https://www.gitignore.io/api/swift,xcode
