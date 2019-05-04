@@ -21,11 +21,6 @@ FOUNDATION_EXPORT const unsigned char NGAppKitVersionString[];
 #import <NGAppKit/KeychainWrapper.h>
 #import <NGAppKit/UUIDGenerator.h>
 
-#import <NGAppKit/RNCryptor.h>
-#import <NGAppKit/RNEncryptor.h>
-#import <NGAppKit/RNDecryptor.h>
-#import <NGAppKit/RNCryptor+Swift.h>
-#import <NGAppKit/RNCryptorHelper.h>
 #import <NGAppKit/DateManager.h>
 #import <NGAppKit/PassCode.h>
 #import <NGAppKit/QueueManager.h>
