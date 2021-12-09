@@ -60,16 +60,22 @@ class ViewController: UIViewController {
 
     private var cryptoFile: CryptoFile?
     private func testCryptoFile(){
-        let docFolder = Folder(name: "CryptoBooks", searchDirectoryType: FileManager.SearchPathDirectory.documentDirectory)
-        let writePath = (docFolder.path())?.appendingPathComponent("crypto.file")
-        
+        //File to read:
         let readUrl = Bundle.main.url(forResource: "books", withExtension: "pdf")
         let readFile = File(url: readUrl!)
-        
+        //File to write-into:
+        let docFolder = Folder(name: "CryptoBooks", searchDirectoryType: FileManager.SearchPathDirectory.documentDirectory)
+        let writePath = (docFolder.path())?.appendingPathComponent("crypto.file")
+        //Create a crypto-file with the write-path:
         cryptoFile = CryptoFile(url: URL(fileURLWithPath: writePath!))
-        cryptoFile?.encrypt(from: readFile, bufferSize: 2048, password: "123456", progress: self, completionHandler: { (done) in
-            print("Successfull \(done)")
-        })
+        cryptoFile?.encrypt(from: readFile
+            , bufferSize: 2048
+            , password: "123456"
+            , progress: self
+            , completionHandler: { (done) in
+                print("Successfull \(done)")
+            }
+        )
     }
 
 }
