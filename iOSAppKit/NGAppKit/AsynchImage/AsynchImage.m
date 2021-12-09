@@ -41,9 +41,9 @@
     //If its a local file
     if ([[NSFileManager defaultManager] isReadableFileAtPath:self.imageLink]) {
         dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_BACKGROUND, 0), ^{
-            _contentImage = [[UIImage alloc] initWithContentsOfFile:self.imageLink];
+            self->_contentImage = [[UIImage alloc] initWithContentsOfFile:self.imageLink];
             dispatch_async(queue, ^{
-                if(handler) handler(_contentImage);
+                if(handler) handler(self->_contentImage);
             });
         });
         return;
@@ -55,9 +55,9 @@
         NSString *savePath = [self getImagePath:saveName];
         if ([[NSFileManager defaultManager] fileExistsAtPath:savePath] == YES) {
             dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_BACKGROUND, 0), ^{
-                _contentImage = [[UIImage alloc] initWithContentsOfFile:savePath];
+                self->_contentImage = [[UIImage alloc] initWithContentsOfFile:savePath];
                 dispatch_async(queue, ^{
-                    if(handler) handler(_contentImage);
+                    if(handler) handler(self->_contentImage);
                 });
             });
             return;
@@ -70,21 +70,21 @@
     NSURL *downloadUrl = [NSURL URLWithString:[self.imageLink stringByAddingPercentEncodingWithAllowedCharacters:[NSCharacterSet URLQueryAllowedCharacterSet]]];
     _dTask = [[NSURLSession sharedSession] downloadTaskWithURL:downloadUrl completionHandler:^(NSURL * _Nullable location, NSURLResponse * _Nullable response, NSError * _Nullable error) {
         if (location) {
-            _contentImage = [[UIImage alloc] initWithContentsOfFile:location.path];
+            self->_contentImage = [[UIImage alloc] initWithContentsOfFile:location.path];
             //save for caching
             if (shouldCache) {
                 NSString *saveName = [self getUniqueName:self.imageLink];
                 NSString *savePath = [self getImagePath:saveName];
                 if ([[NSFileManager defaultManager] fileExistsAtPath:savePath] == NO) {
-                    NSData *data = [[[saveName pathExtension] lowercaseString] isEqualToString:@"png"] ? UIImagePNGRepresentation(_contentImage) : UIImageJPEGRepresentation(_contentImage, 1.0);
+                    NSData *data = [[[saveName pathExtension] lowercaseString] isEqualToString:@"png"] ? UIImagePNGRepresentation(self->_contentImage) : UIImageJPEGRepresentation(self->_contentImage, 1.0);
                     if([data writeToFile:savePath atomically:YES])
                         NSLog(@"Save Successfull %@",saveName);
                 }
             }
         }
-        _dTask = nil;
+        self->_dTask = nil;
         dispatch_async(queue, ^{
-            if(handler) handler(_contentImage);
+            if(handler) handler(self->_contentImage);
         });
     }];
     [_dTask resume];
@@ -113,7 +113,7 @@
             if(handler) handler(_contentImage);
         }else{
             dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_BACKGROUND, 0), ^{
-                UIImage *resize = [self imageByScalingAndCropping:size source:_contentImage];
+                UIImage *resize = [self imageByScalingAndCropping:size source:self->_contentImage];
                 dispatch_async(dispatch_get_main_queue(), ^{
                     if(handler) handler(resize);
                 });

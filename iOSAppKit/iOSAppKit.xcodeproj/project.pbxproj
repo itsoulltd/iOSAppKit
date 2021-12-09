@@ -629,6 +629,7 @@
 					};
 					26806F852099994B0089292C = {
 						CreatedOnToolsVersion = 9.0;
+						LastSwiftMigration = 1130;
 						ProvisioningStyle = Automatic;
 					};
 					26806F8D2099994C0089292C = {
@@ -1038,7 +1039,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.swift.NGAppKit;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -1068,7 +1069,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.swift.NGAppKit;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
