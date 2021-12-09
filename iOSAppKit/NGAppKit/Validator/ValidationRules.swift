@@ -35,7 +35,7 @@ open class Equal: NSObject, Validation {
     }
     
     open func validate(_ value: AnyObject) -> Bool {
-        let result = value.hashValue == baseValue.hashValue
+        let result = value.hash == baseValue.hash
         return result
     }
 }
@@ -57,7 +57,7 @@ open class EqualDate: Equal {
 open class Greater: Equal {
     
     override open func validate(_ value: AnyObject) -> Bool {
-        let result = value.hashValue > baseValue.hashValue
+        let result = value.hash > baseValue.hash
         return result
     }
 }
@@ -79,7 +79,7 @@ open class GreaterDate: Greater {
 open class Smaller: Greater {
     
     override open func validate(_ value: AnyObject) -> Bool {
-        let result =  value.hashValue < baseValue.hashValue
+        let result =  value.hash < baseValue.hash
         return result
     }
 }
@@ -224,7 +224,7 @@ open class RegX: NSObject, Validation {
             guard let regx = self.regx else{
                 return false
             }
-            let matches = regx.numberOfMatches(in: input, options: NSRegularExpression.MatchingOptions.reportCompletion, range: NSMakeRange(0, input.characters.count))
+            let matches = regx.numberOfMatches(in: input, options: NSRegularExpression.MatchingOptions.reportCompletion, range: NSMakeRange(0, input.count))
             return matches == 1
         }
         else{

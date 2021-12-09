@@ -77,10 +77,8 @@
 		2680703520999BEC0089292C /* AppStoryboard.m in Sources */ = {isa = PBXBuildFile; fileRef = 2680702E20999BEC0089292C /* AppStoryboard.m */; };
 		268070372099B2600089292C /* CoreDataStack.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 268070362099B2600089292C /* CoreDataStack.framework */; };
 		268070382099B2600089292C /* CoreDataStack.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 268070362099B2600089292C /* CoreDataStack.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		2680703A2099B2710089292C /* CoreDataStack.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 268070362099B2600089292C /* CoreDataStack.framework */; };
 		2680703C2099B33A0089292C /* FileSystemSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2680703B2099B33A0089292C /* FileSystemSDK.framework */; };
 		2680703D2099B33A0089292C /* FileSystemSDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2680703B2099B33A0089292C /* FileSystemSDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		2680703E2099B3440089292C /* FileSystemSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2680703B2099B33A0089292C /* FileSystemSDK.framework */; };
 		269FED9F209B447F004FA261 /* CoreNetworkStack.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 269FED9E209B447F004FA261 /* CoreNetworkStack.framework */; };
 		269FEDA0209B447F004FA261 /* CoreNetworkStack.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 269FED9E209B447F004FA261 /* CoreNetworkStack.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		269FEDA2209B4C6B004FA261 /* MyBoard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 269FEDA1209B4C6B004FA261 /* MyBoard.storyboard */; };
@@ -88,7 +86,9 @@
 		269FEDA6209B6D95004FA261 /* CustomTransitioningAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 269FEDA5209B6D94004FA261 /* CustomTransitioningAnimator.swift */; };
 		269FEDA8209B6E96004FA261 /* CustomRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 269FEDA7209B6E96004FA261 /* CustomRouter.swift */; };
 		26BF229120DCE192001DAE93 /* books.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 26BF229020DCE192001DAE93 /* books.pdf */; };
-		8F4393142761ACFC00F76253 /* CoreNetworkStack.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 269FED9E209B447F004FA261 /* CoreNetworkStack.framework */; };
+		8F43931F276204EB00F76253 /* FileSystemSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2680703B2099B33A0089292C /* FileSystemSDK.framework */; };
+		8F439321276204EB00F76253 /* CoreDataStack.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 268070362099B2600089292C /* CoreDataStack.framework */; };
+		8F439323276204EB00F76253 /* CoreNetworkStack.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 269FED9E209B447F004FA261 /* CoreNetworkStack.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -232,9 +232,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2680703E2099B3440089292C /* FileSystemSDK.framework in Frameworks */,
-				2680703A2099B2710089292C /* CoreDataStack.framework in Frameworks */,
-				8F4393142761ACFC00F76253 /* CoreNetworkStack.framework in Frameworks */,
+				8F439321276204EB00F76253 /* CoreDataStack.framework in Frameworks */,
+				8F43931F276204EB00F76253 /* FileSystemSDK.framework in Frameworks */,
+				8F439323276204EB00F76253 /* CoreNetworkStack.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -615,7 +615,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0900;
-				LastUpgradeCheck = 0900;
+				LastUpgradeCheck = 1130;
 				ORGANIZATIONNAME = "Towhid Islam";
 				TargetAttributes = {
 					26806F5D209978070089292C = {
@@ -840,6 +840,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -847,6 +848,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -897,6 +899,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -904,6 +907,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
