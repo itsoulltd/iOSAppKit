@@ -31,7 +31,7 @@
 		26806F962099994C0089292C /* NGAppKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26806F952099994C0089292C /* NGAppKitTests.swift */; };
 		26806F982099994C0089292C /* NGAppKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 26806F882099994C0089292C /* NGAppKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		26806F9B2099994C0089292C /* NGAppKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26806F862099994B0089292C /* NGAppKit.framework */; };
-		26806F9C2099994C0089292C /* NGAppKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 26806F862099994B0089292C /* NGAppKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		26806F9C2099994C0089292C /* NGAppKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 26806F862099994B0089292C /* NGAppKit.framework */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		26806FF920999A250089292C /* KeychainWrapper.h in Headers */ = {isa = PBXBuildFile; fileRef = 26806FB120999A230089292C /* KeychainWrapper.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		26806FFA20999A250089292C /* KeychainWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 26806FB220999A230089292C /* KeychainWrapper.m */; };
 		26806FFB20999A250089292C /* UUIDGenerator.h in Headers */ = {isa = PBXBuildFile; fileRef = 26806FB320999A230089292C /* UUIDGenerator.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -75,20 +75,20 @@
 		2680703320999BEC0089292C /* AppInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 2680702C20999BEC0089292C /* AppInfo.m */; };
 		2680703420999BEC0089292C /* AppStoryboard.h in Headers */ = {isa = PBXBuildFile; fileRef = 2680702D20999BEC0089292C /* AppStoryboard.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2680703520999BEC0089292C /* AppStoryboard.m in Sources */ = {isa = PBXBuildFile; fileRef = 2680702E20999BEC0089292C /* AppStoryboard.m */; };
-		268070372099B2600089292C /* CoreDataStack.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 268070362099B2600089292C /* CoreDataStack.framework */; };
-		268070382099B2600089292C /* CoreDataStack.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 268070362099B2600089292C /* CoreDataStack.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		2680703C2099B33A0089292C /* FileSystemSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2680703B2099B33A0089292C /* FileSystemSDK.framework */; };
-		2680703D2099B33A0089292C /* FileSystemSDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2680703B2099B33A0089292C /* FileSystemSDK.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		269FED9F209B447F004FA261 /* CoreNetworkStack.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 269FED9E209B447F004FA261 /* CoreNetworkStack.framework */; };
-		269FEDA0209B447F004FA261 /* CoreNetworkStack.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 269FED9E209B447F004FA261 /* CoreNetworkStack.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		269FEDA2209B4C6B004FA261 /* MyBoard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 269FEDA1209B4C6B004FA261 /* MyBoard.storyboard */; };
 		269FEDA4209B4CDD004FA261 /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 269FEDA3209B4CDD004FA261 /* TestViewController.swift */; };
 		269FEDA6209B6D95004FA261 /* CustomTransitioningAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 269FEDA5209B6D94004FA261 /* CustomTransitioningAnimator.swift */; };
 		269FEDA8209B6E96004FA261 /* CustomRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 269FEDA7209B6E96004FA261 /* CustomRouter.swift */; };
 		26BF229120DCE192001DAE93 /* books.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 26BF229020DCE192001DAE93 /* books.pdf */; };
-		8F43931F276204EB00F76253 /* FileSystemSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2680703B2099B33A0089292C /* FileSystemSDK.framework */; };
-		8F439321276204EB00F76253 /* CoreDataStack.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 268070362099B2600089292C /* CoreDataStack.framework */; };
-		8F439323276204EB00F76253 /* CoreNetworkStack.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 269FED9E209B447F004FA261 /* CoreNetworkStack.framework */; };
+		8F43932E27620ED400F76253 /* CoreDataStack.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 268070362099B2600089292C /* CoreDataStack.framework */; };
+		8F43933027620ED400F76253 /* CoreNetworkStack.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 269FED9E209B447F004FA261 /* CoreNetworkStack.framework */; };
+		8F43933227620ED400F76253 /* FileSystemSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2680703B2099B33A0089292C /* FileSystemSDK.framework */; };
+		8F43933527620F0B00F76253 /* FileSystemSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2680703B2099B33A0089292C /* FileSystemSDK.framework */; };
+		8F43933627620F0B00F76253 /* FileSystemSDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2680703B2099B33A0089292C /* FileSystemSDK.framework */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		8F43933727620F1400F76253 /* CoreNetworkStack.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 269FED9E209B447F004FA261 /* CoreNetworkStack.framework */; };
+		8F43933827620F1400F76253 /* CoreNetworkStack.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 269FED9E209B447F004FA261 /* CoreNetworkStack.framework */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		8F43933927620F1600F76253 /* CoreDataStack.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 268070362099B2600089292C /* CoreDataStack.framework */; };
+		8F43933A27620F1600F76253 /* CoreDataStack.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 268070362099B2600089292C /* CoreDataStack.framework */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -129,10 +129,10 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				268070382099B2600089292C /* CoreDataStack.framework in Embed Frameworks */,
-				2680703D2099B33A0089292C /* FileSystemSDK.framework in Embed Frameworks */,
+				8F43933A27620F1600F76253 /* CoreDataStack.framework in Embed Frameworks */,
+				8F43933627620F0B00F76253 /* FileSystemSDK.framework in Embed Frameworks */,
 				26806F9C2099994C0089292C /* NGAppKit.framework in Embed Frameworks */,
-				269FEDA0209B447F004FA261 /* CoreNetworkStack.framework in Embed Frameworks */,
+				8F43933827620F1400F76253 /* CoreNetworkStack.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -214,10 +214,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				268070372099B2600089292C /* CoreDataStack.framework in Frameworks */,
-				2680703C2099B33A0089292C /* FileSystemSDK.framework in Frameworks */,
+				8F43933927620F1600F76253 /* CoreDataStack.framework in Frameworks */,
 				26806F9B2099994C0089292C /* NGAppKit.framework in Frameworks */,
-				269FED9F209B447F004FA261 /* CoreNetworkStack.framework in Frameworks */,
+				8F43933527620F0B00F76253 /* FileSystemSDK.framework in Frameworks */,
+				8F43933727620F1400F76253 /* CoreNetworkStack.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -232,9 +232,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8F439321276204EB00F76253 /* CoreDataStack.framework in Frameworks */,
-				8F43931F276204EB00F76253 /* FileSystemSDK.framework in Frameworks */,
-				8F439323276204EB00F76253 /* CoreNetworkStack.framework in Frameworks */,
+				8F43932E27620ED400F76253 /* CoreDataStack.framework in Frameworks */,
+				8F43933227620ED400F76253 /* FileSystemSDK.framework in Frameworks */,
+				8F43933027620ED400F76253 /* CoreNetworkStack.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

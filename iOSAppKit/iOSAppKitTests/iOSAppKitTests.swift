@@ -7,7 +7,7 @@
 //
 
 import XCTest
-@testable import iOSAppKit
+@testable import NGAppKit
 
 class iOSAppKitTests: XCTestCase {
     
