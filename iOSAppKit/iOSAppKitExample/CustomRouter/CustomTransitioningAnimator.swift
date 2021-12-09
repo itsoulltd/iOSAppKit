@@ -42,8 +42,8 @@ class CustomTransitioningAnimator: NSObject, UIViewControllerAnimatedTransitioni
             
             toViewController.view.frame = finalFrameForVC
             toViewController.view.alpha = 0.5
-            containerView.addSubview(toViewController.view)
-            containerView.sendSubview(toBack: toViewController.view)
+            //containerView.addSubview(toViewController.view)
+            //containerView.sendSubview(toBack: toViewController.view)
             
             let snapshot = fromViewController.view.snapshotView(afterScreenUpdates: false)!
             snapshot.frame = fromViewController.view.frame
