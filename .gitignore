@@ -78,3 +78,4 @@ fastlane/test_output
 iOSAppKit/*.framework
 
 # End of https://www.gitignore.io/api/swift,xcode
+IDEWorkspaceChecks.plist
