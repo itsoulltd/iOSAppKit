@@ -31,11 +31,9 @@ class CustomTransitioningAnimator: NSObject, UIViewControllerAnimatedTransitioni
             containerView.addSubview(toViewController.view)
             
             UIView.animate(withDuration: transitionDuration(using: transitionContext), delay: 0.0, usingSpringWithDamping: 0.65, initialSpringVelocity: 0.0, options: UIViewAnimationOptions(), animations: {
-                
-                fromViewController.view.alpha = 0.5
-                toViewController.view.frame = finalFrameForVC
+                    fromViewController.view.alpha = 0.5
+                    toViewController.view.frame = finalFrameForVC
                 }, completion: { finished in
-                    
                     fromViewController.view.alpha = 1.0
                     transitionContext.completeTransition(true)
             })
@@ -55,11 +53,9 @@ class CustomTransitioningAnimator: NSObject, UIViewControllerAnimatedTransitioni
             fromViewController.view.removeFromSuperview()
             
             UIView.animate(withDuration: transitionDuration(using: transitionContext), delay: 0.0, usingSpringWithDamping: 0.65, initialSpringVelocity: 0.0, options: UIViewAnimationOptions(), animations: {
-                
-                snapshot.frame = snapshotFinalFrame
-                toViewController.view.alpha = 1.0
+                    snapshot.frame = snapshotFinalFrame
+                    toViewController.view.alpha = 1.0
                 }, completion: { finished in
-                    
                     snapshot.removeFromSuperview()
                     transitionContext.completeTransition(true)
             })
