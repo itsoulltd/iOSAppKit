@@ -7,6 +7,17 @@
 	objects = {
 
 /* Begin PBXAggregateTarget section */
+		26D7CC9D2ACE1BA30071FC84 /* Aggregate-v2 */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = 26D7CC9E2ACE1BA30071FC84 /* Build configuration list for PBXAggregateTarget "Aggregate-v2" */;
+			buildPhases = (
+				26D7CCA12ACE1BBD0071FC84 /* ShellScript */,
+			);
+			dependencies = (
+			);
+			name = "Aggregate-v2";
+			productName = "Aggregate-v2";
+		};
 		8F6DC6F922776DDC0064BD80 /* Aggregate */ = {
 			isa = PBXAggregateTarget;
 			buildConfigurationList = 8F6DC6FC22776DDC0064BD80 /* Build configuration list for PBXAggregateTarget "Aggregate" */;
@@ -80,15 +91,12 @@
 		269FEDA6209B6D95004FA261 /* CustomTransitioningAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 269FEDA5209B6D94004FA261 /* CustomTransitioningAnimator.swift */; };
 		269FEDA8209B6E96004FA261 /* CustomRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 269FEDA7209B6E96004FA261 /* CustomRouter.swift */; };
 		26BF229120DCE192001DAE93 /* books.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 26BF229020DCE192001DAE93 /* books.pdf */; };
-		8F43932E27620ED400F76253 /* CoreDataStack.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 268070362099B2600089292C /* CoreDataStack.framework */; };
-		8F43933027620ED400F76253 /* CoreNetworkStack.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 269FED9E209B447F004FA261 /* CoreNetworkStack.framework */; };
-		8F43933227620ED400F76253 /* FileSystemSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2680703B2099B33A0089292C /* FileSystemSDK.framework */; };
-		8F43933527620F0B00F76253 /* FileSystemSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2680703B2099B33A0089292C /* FileSystemSDK.framework */; };
-		8F43933627620F0B00F76253 /* FileSystemSDK.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 2680703B2099B33A0089292C /* FileSystemSDK.framework */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		8F43933727620F1400F76253 /* CoreNetworkStack.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 269FED9E209B447F004FA261 /* CoreNetworkStack.framework */; };
-		8F43933827620F1400F76253 /* CoreNetworkStack.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 269FED9E209B447F004FA261 /* CoreNetworkStack.framework */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		8F43933927620F1600F76253 /* CoreDataStack.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 268070362099B2600089292C /* CoreDataStack.framework */; };
-		8F43933A27620F1600F76253 /* CoreDataStack.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 268070362099B2600089292C /* CoreDataStack.framework */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		26D7CCA32ACE1CBB0071FC84 /* CoreDataStack.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26D7CCA22ACE1CBB0071FC84 /* CoreDataStack.framework */; };
+		26D7CCA42ACE1CBB0071FC84 /* CoreDataStack.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26D7CCA22ACE1CBB0071FC84 /* CoreDataStack.framework */; };
+		26D7CCA62ACE1CCD0071FC84 /* CoreNetworkStack.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26D7CCA52ACE1CCD0071FC84 /* CoreNetworkStack.framework */; };
+		26D7CCA72ACE1CCE0071FC84 /* CoreNetworkStack.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26D7CCA52ACE1CCD0071FC84 /* CoreNetworkStack.framework */; };
+		26D7CCA92ACE1CFE0071FC84 /* FileSystemSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26D7CCA82ACE1CFE0071FC84 /* FileSystemSDK.framework */; };
+		26D7CCAA2ACE1CFE0071FC84 /* FileSystemSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 26D7CCA82ACE1CFE0071FC84 /* FileSystemSDK.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -129,10 +137,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				8F43933A27620F1600F76253 /* CoreDataStack.framework in Embed Frameworks */,
-				8F43933627620F0B00F76253 /* FileSystemSDK.framework in Embed Frameworks */,
 				26806F9C2099994C0089292C /* NGAppKit.framework in Embed Frameworks */,
-				8F43933827620F1400F76253 /* CoreNetworkStack.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -199,14 +204,14 @@
 		2680702C20999BEC0089292C /* AppInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppInfo.m; sourceTree = "<group>"; };
 		2680702D20999BEC0089292C /* AppStoryboard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppStoryboard.h; sourceTree = "<group>"; };
 		2680702E20999BEC0089292C /* AppStoryboard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppStoryboard.m; sourceTree = "<group>"; };
-		268070362099B2600089292C /* CoreDataStack.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = CoreDataStack.framework; sourceTree = "<group>"; };
-		2680703B2099B33A0089292C /* FileSystemSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FileSystemSDK.framework; sourceTree = "<group>"; };
-		269FED9E209B447F004FA261 /* CoreNetworkStack.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = CoreNetworkStack.framework; sourceTree = "<group>"; };
 		269FEDA1209B4C6B004FA261 /* MyBoard.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MyBoard.storyboard; sourceTree = "<group>"; };
 		269FEDA3209B4CDD004FA261 /* TestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestViewController.swift; sourceTree = "<group>"; };
 		269FEDA5209B6D94004FA261 /* CustomTransitioningAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomTransitioningAnimator.swift; sourceTree = "<group>"; };
 		269FEDA7209B6E96004FA261 /* CustomRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomRouter.swift; sourceTree = "<group>"; };
 		26BF229020DCE192001DAE93 /* books.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = books.pdf; sourceTree = "<group>"; };
+		26D7CCA22ACE1CBB0071FC84 /* CoreDataStack.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = CoreDataStack.framework; sourceTree = "<group>"; };
+		26D7CCA52ACE1CCD0071FC84 /* CoreNetworkStack.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = CoreNetworkStack.framework; sourceTree = "<group>"; };
+		26D7CCA82ACE1CFE0071FC84 /* FileSystemSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FileSystemSDK.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -214,10 +219,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8F43933927620F1600F76253 /* CoreDataStack.framework in Frameworks */,
+				26D7CCA32ACE1CBB0071FC84 /* CoreDataStack.framework in Frameworks */,
 				26806F9B2099994C0089292C /* NGAppKit.framework in Frameworks */,
-				8F43933527620F0B00F76253 /* FileSystemSDK.framework in Frameworks */,
-				8F43933727620F1400F76253 /* CoreNetworkStack.framework in Frameworks */,
+				26D7CCA92ACE1CFE0071FC84 /* FileSystemSDK.framework in Frameworks */,
+				26D7CCA62ACE1CCD0071FC84 /* CoreNetworkStack.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -232,9 +237,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8F43932E27620ED400F76253 /* CoreDataStack.framework in Frameworks */,
-				8F43933227620ED400F76253 /* FileSystemSDK.framework in Frameworks */,
-				8F43933027620ED400F76253 /* CoreNetworkStack.framework in Frameworks */,
+				26D7CCA42ACE1CBB0071FC84 /* CoreDataStack.framework in Frameworks */,
+				26D7CCAA2ACE1CFE0071FC84 /* FileSystemSDK.framework in Frameworks */,
+				26D7CCA72ACE1CCE0071FC84 /* CoreNetworkStack.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -252,9 +257,6 @@
 		26806F55209978070089292C = {
 			isa = PBXGroup;
 			children = (
-				269FED9E209B447F004FA261 /* CoreNetworkStack.framework */,
-				2680703B2099B33A0089292C /* FileSystemSDK.framework */,
-				268070362099B2600089292C /* CoreDataStack.framework */,
 				26806F60209978070089292C /* iOSAppKitExample */,
 				26806F75209978080089292C /* iOSAppKitTests */,
 				26806F872099994C0089292C /* NGAppKit */,
@@ -485,6 +487,9 @@
 		268070392099B2710089292C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				26D7CCA22ACE1CBB0071FC84 /* CoreDataStack.framework */,
+				26D7CCA52ACE1CCD0071FC84 /* CoreNetworkStack.framework */,
+				26D7CCA82ACE1CFE0071FC84 /* FileSystemSDK.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -637,6 +642,10 @@
 						ProvisioningStyle = Automatic;
 						TestTargetID = 26806F5D209978070089292C;
 					};
+					26D7CC9D2ACE1BA30071FC84 = {
+						CreatedOnToolsVersion = 14.2;
+						ProvisioningStyle = Automatic;
+					};
 					8F6DC6F922776DDC0064BD80 = {
 						CreatedOnToolsVersion = 9.2;
 						ProvisioningStyle = Automatic;
@@ -661,6 +670,7 @@
 				26806F852099994B0089292C /* NGAppKit */,
 				26806F8D2099994C0089292C /* NGAppKitTests */,
 				8F6DC6F922776DDC0064BD80 /* Aggregate */,
+				26D7CC9D2ACE1BA30071FC84 /* Aggregate-v2 */,
 			);
 		};
 /* End PBXProject section */
@@ -702,6 +712,23 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
+		26D7CCA12ACE1BBD0071FC84 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Merge Script\n\n# 1\n# Set bash script to exit immediately if any commands fail.\nset -e\n\n# 2\n# Setup some constants for use later on.\nFRAMEWORK_NAME=\"NGAppKit\"\n\n#Here we create default directory structure on desktop if not exist\nmkdir -p \"${HOME}/Downloads/NextGenBuilds/${FRAMEWORK_NAME}/FatBuild\"\nmkdir -p \"${HOME}/Downloads/NextGenBuilds/${FRAMEWORK_NAME}/Release\"\n\n# 3\n# If remnants from a previous build exist, delete them.\nif [ -d \"${SRCROOT}/build\" ]; then\nrm -rf \"${SRCROOT}/build\"\nfi\n\n# 4\n# Build the framework for device and for simulator (using\n# all needed architectures).\nxcodebuild -target \"${FRAMEWORK_NAME}\" -configuration Debug -arch arm64 only_active_arch=no defines_module=yes -sdk \"iphoneos\"\nxcodebuild -target \"${FRAMEWORK_NAME}\" -configuration Debug -arch x86_64 only_active_arch=no defines_module=yes -sdk \"iphonesimulator\"\n\n# 5\n# Remove .framework file if exists on target-dir from previous run.\nif [ -d \"${HOME}/Downloads/NextGenBuilds/${FRAMEWORK_NAME}/FatBuild/${FRAMEWORK_NAME}.framework\" ]; then\nrm -rf \"${HOME}/Downloads/NextGenBuilds/${FRAMEWORK_NAME}/FatBuild/${FRAMEWORK_NAME}.framework\"\nfi\n#Remove release build also\n# Remove .framework file if exists on target from previous run.\nif [ -d \"${HOME}/Downloads/NextGenBuilds/${FRAMEWORK_NAME}/Release/${FRAMEWORK_NAME}.framework\" ]; then\nrm -rf \"${HOME}/Downloads/NextGenBuilds/${FRAMEWORK_NAME}/Release/${FRAMEWORK_NAME}.framework\"\nfi\n\n# 6\n# Copy the device version of framework to target.\ncp -r \"${SRCROOT}/build/Debug-iphoneos/${FRAMEWORK_NAME}.framework\" \"${HOME}/Downloads/NextGenBuilds/${FRAMEWORK_NAME}/Release/${FRAMEWORK_NAME}.framework\"\n\ncp -r \"${SRCROOT}/build/Debug-iphoneos/${FRAMEWORK_NAME}.framework\" \"${HOME}/Downloads/NextGenBuilds/${FRAMEWORK_NAME}/FatBuild/${FRAMEWORK_NAME}.framework\"\n\n# 7\n# Replace the framework executable within the framework with\n# a new version created by merging the device and simulator\n# frameworks' executables with lipo.\nlipo -create -output \"${HOME}/Downloads/NextGenBuilds/${FRAMEWORK_NAME}/FatBuild/${FRAMEWORK_NAME}.framework/${FRAMEWORK_NAME}\" \"${SRCROOT}/build/Debug-iphoneos/${FRAMEWORK_NAME}.framework/${FRAMEWORK_NAME}\" \"${SRCROOT}/build/Debug-iphonesimulator/${FRAMEWORK_NAME}.framework/${FRAMEWORK_NAME}\"\n\n# 8\n# Copy the Swift module mappings for the simulator into the\n# framework.  The device mappings already exist from step 6.\ncp -r \"${SRCROOT}/build/Debug-iphonesimulator/${FRAMEWORK_NAME}.framework/Modules/${FRAMEWORK_NAME}.swiftmodule/\" \"${HOME}/Downloads/NextGenBuilds/${FRAMEWORK_NAME}/FatBuild/${FRAMEWORK_NAME}.framework/Modules/${FRAMEWORK_NAME}.swiftmodule\"\n\n# 9\n# Delete the most recent build.\nif [ -d \"${SRCROOT}/build\" ]; then\nrm -rf \"${SRCROOT}/build\"\nfi\n";
+		};
 		8F6DC6FD22776DE30064BD80 /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -951,7 +978,7 @@
 					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = iOSAppKitExample/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.swift.iOSAppKit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -973,7 +1000,7 @@
 					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = iOSAppKitExample/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.swift.iOSAppKit;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1019,6 +1046,7 @@
 		26806F9E2099994C0089292C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -1034,7 +1062,7 @@
 				);
 				INFOPLIST_FILE = NGAppKit/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.swift.NGAppKit;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
@@ -1049,6 +1077,7 @@
 		26806F9F2099994C0089292C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
@@ -1064,7 +1093,7 @@
 				);
 				INFOPLIST_FILE = NGAppKit/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.swift.NGAppKit;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
@@ -1108,9 +1137,30 @@
 			};
 			name = Release;
 		};
+		26D7CC9F2ACE1BA30071FC84 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YS4F7VX5G2;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		26D7CCA02ACE1BA30071FC84 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = YS4F7VX5G2;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 		8F6DC6FA22776DDC0064BD80 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = YS4F7VX5G2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1120,6 +1170,7 @@
 		8F6DC6FB22776DDC0064BD80 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = YS4F7VX5G2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -1170,6 +1221,15 @@
 			buildConfigurations = (
 				26806FA22099994C0089292C /* Debug */,
 				26806FA32099994C0089292C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		26D7CC9E2ACE1BA30071FC84 /* Build configuration list for PBXAggregateTarget "Aggregate-v2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				26D7CC9F2ACE1BA30071FC84 /* Debug */,
+				26D7CCA02ACE1BA30071FC84 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
